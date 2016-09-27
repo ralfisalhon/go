@@ -1,0 +1,9 @@
+---
+layout: links
+title: winners
+permalink: /:title
+forward_to: http://2015.polyhack.tufts.io/winners
+hidden: false
+author: team@tufts.io
+---
+Tufts Polyhack Fall 2015 winners
