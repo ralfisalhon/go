@@ -183,35 +183,6 @@ body {
 	}
 }
 
-// Feature Image Caption
-.image-credit {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 0 auto;
-	max-width: 440px;
-	padding: 10px 15px;
-	background-color: rgba($base-color,0.5);
-	color: #fff;
-	@include font-rem(12);
-	text-align: right;
-	border-radius: 3px 0 0 0;
-	z-index: 10;
-
-	@media #{$medium} {
-		max-width: 760px;
-	}
-
-	@media #{$large} {
-		max-width: 960px;
-	}
-
-	a {
-		color: #fff;
-		text-decoration: none;
-	}
-}
-
 /*
    Single post and page
    ========================================================================== */
