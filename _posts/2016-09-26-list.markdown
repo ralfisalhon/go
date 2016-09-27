@@ -1,8 +1,8 @@
 ---
 layout: links
-title: polyhack
+title: list
 permalink: /:title
-forward_to: http://polyhack.tufts.io
+forward_to: posts
 hidden: false
 author: team@tufts.io
 ---

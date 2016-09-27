@@ -2,7 +2,7 @@
 layout: links
 title: csx
 permalink: /:title
-forward_to: www.tuftscsx.com
+forward_to: http://www.tuftscsx.com
 hidden: false
 author: team@tufts.io
 ---

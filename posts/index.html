@@ -15,7 +15,7 @@ comments: false
       <ul>
     {% endif %}
 
-        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">/{{ post.title }}</a></li>
 
     {% if forloop.last %}
       </ul>
@@ -30,3 +30,14 @@ comments: false
         {% endif %}
     {% endif %}
 {% endfor %}
+
+<article>
+  <h2>Reserved</h2>
+  <ul>
+    <li class="entry-title"><a href="/new">/new</a></li>
+    <li class="entry-title"><a href="/posts">/posts</a></li>
+    <li class="entry-title"><a href="/images">/images</a></li>
+    <li class="entry-title"><a href="/assets">/assets</a></li>
+    <li class="entry-title"><a href="/about">/about</a></li>
+  </ul>
+</article>
