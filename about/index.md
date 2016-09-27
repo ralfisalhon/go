@@ -22,7 +22,6 @@ If you've used any of [my other themes](http://mademistakes.com/work/jekyll-them
 * Sweet animated menu.
 * Background image support.
 * Support for large images to call out your favorite posts.
-* Optional [Disqus](http://disqus.com) comments.
 * Simple and clear permalink structure[^1].
 * [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
 * [Custom 404 page]({{ site.url }}/404.html) to get you started.
