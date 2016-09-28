@@ -6,3 +6,4 @@ forward_to: http://polyhack.tufts.io
 hidden: false
 author: team@tufts.io
 ---
+Forwards to the current iteration of polyhack, which is 2016.polyhack.tufts.io as of writing
