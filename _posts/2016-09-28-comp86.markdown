@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://www.cs.tufts.edu/comp/86/
+hidden: false
+author: team@tufts.io
+---
+COMP86 Object-Oriented Programming for Graphical User Interfaces class page
