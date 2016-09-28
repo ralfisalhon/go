@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: posts
+forward_to: http://go.tufts.io/posts
 hidden: false
 author: team@tufts.io
 ---

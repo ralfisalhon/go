@@ -1,7 +1,7 @@
 ---
 layout: links       # Don't touch this
 permalink: /:title  # Don't touch this
-forward_to: about#help
+forward_to: http://go.tufts.io/about#help
 hidden: true
 author: team@tufts.io
 ---

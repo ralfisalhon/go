@@ -30,6 +30,17 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
   <script type="text/javascript">
     var today = new Date();
 
+    var existingPostNames = {
+      "about" : true,
+      "assets" : true,
+      "images" : true,
+      "new" : true,
+      "posts" : true,
+      {% for post in site.posts %}
+        {{ post.title | downcase }} : true,
+      {% endfor %}
+    }
+
     function changeContentText() {
       var url = document.getElementById('website-url-input').value;
       var shorturl = document.getElementById('link-name-input').value;
@@ -66,6 +77,8 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
         return "Warning: links are not case sensitive. /CSX and /csx forward to the same site";
       } else if (/^[a-z0-9\-]+$/.test(url) == false) {
         return "Links can only use letters, numbers, and -";
+      } else if (existingPostNames[(url.toLowerCase())]) {
+        return "Link name already exists";
       } else {
         return "None";
       }
