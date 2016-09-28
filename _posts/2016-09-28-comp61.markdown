@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: www.cs.tufts.edu/comp/61/
+hidden: false
+author: team@tufts.io
+---
+COMP40 Machine Structure & Assembly-Language Programming class page
