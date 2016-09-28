@@ -47,3 +47,8 @@ ___
 
 ### [Tufts.io](http://tufts.io) and CSX
 CSX is the umbrella group that encompasses all things CS at Tufts.  This includes holding tech talks, communicating with administration, supporting CS-based groups, etc.  Tufts.io is maintained by the people at CSX, but is the avenue that encourages more practical learning.  This includes the hackathon, Tamper nights, go links, resources for building individual projects, and working with the administration to enable more practical learning.
+
+___
+
+### Help
+* team@tufts.io or richard@tufts.io
