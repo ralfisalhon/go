@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://www.cs.tufts.edu/comp/15/
+hidden: false
+author: team@tufts.io
+---
+COMP15 Data Structures class page
