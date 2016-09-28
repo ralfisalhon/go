@@ -13,16 +13,16 @@ image:
       <header>
         {% if post.image.feature %}
           <div class="entry-image-index">
-            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | downcase }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title | downcase }}"></a>
+            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | downcase | replace: ' ', '-' }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title | downcase | replace: ' ', '-' }}"></a>
           </div><!-- /.entry-image -->
         {% endif %}
         <div class="entry-meta">
           <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn">{{ post.author }}</span></span>
         </div><!-- /.entry-meta -->
         {% if post.link %}
-          <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title | downcase }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title | downcase }}</a></h1>
+          <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title | downcase | replace: ' ', '-' }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title | downcase | replace: ' ', '-' }}</a></h1>
         {% else %}
-          <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title | downcase }}" itemprop="url">/{{ post.title | downcase }}</a></h1>
+          <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title | downcase | replace: ' ', '-' }}" itemprop="url">/{{ post.title | downcase | replace: ' ', '-' }}</a></h1>
         {% endif %}
       </header>
       <div class="entry-content">

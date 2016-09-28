@@ -37,7 +37,7 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
       "new" : true,
       "posts" : true,
       {% for post in site.posts %}
-        {{ post.title | downcase }} : true,
+        "{{ post.title | downcase | replace: ' ', '-' }}" : true,
       {% endfor %}
     }
 
@@ -86,7 +86,7 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
 
     function emailErrors(email) {
       if (email.indexOf("@tufts.edu") == -1) {
-        return "Must include a Tufts email";
+        return "Must include at least 1 Tufts email";
       } else {
         return "None";
       }
