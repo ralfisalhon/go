@@ -62,6 +62,8 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
     function shorturlErrors(url) {
       if (url.indexOf(" ") !== -1) {
         return "Link name can't contain spaces";
+      } else if (/.*[A-Z].*/.test(url) == true) {
+        return "Warning: links are not case sensitive. /CSX and /csx forward to the same site";
       } else if (/^[a-z0-9\-]+$/.test(url) == false) {
         return "Links can only use letters, numbers, and -";
       } else {
