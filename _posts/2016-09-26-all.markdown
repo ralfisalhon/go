@@ -1,6 +1,5 @@
 ---
 layout: links
-title: all
 permalink: /:title
 forward_to: posts
 hidden: false

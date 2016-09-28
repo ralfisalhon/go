@@ -1,6 +1,5 @@
 ---
 layout: links
-title: polyhack
 permalink: /:title
 forward_to: http://polyhack.tufts.io
 hidden: false
