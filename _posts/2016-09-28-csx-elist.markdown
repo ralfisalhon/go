@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://alexlenail.us7.list-manage.com/subscribe?u=c6bc0c27749fcf9073bb37914&id=0ffb1e8a92
+hidden: false
+author: team@tufts.io
+---
+CSX Elist
