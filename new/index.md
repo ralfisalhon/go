@@ -29,13 +29,6 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
 <section onload>
   <script type="text/javascript">
     var today = new Date();
-    // var usedLinks = {};
-    // function fetchUsedLinks() {
-    //   var fs = require('fs');
-    //   var files = fs.readdirSync('/posts/');
-    //   console.log(files);
-    // }
-    // window.onload = fetchUsedLinks;
 
     function changeContentText() {
       var url = document.getElementById('website-url-input').value;
@@ -55,15 +48,15 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
         day = "0" + day
       };
 
-      document.getElementById('content-title-text').innerHTML = year+"-"+month+"-"+day+"-"+shorturl+".markdown";
-
       if (url.indexOf("://") == -1) {
         url = "http://"+url
       }
 
-      var result = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nhidden: "+hidden+"\nauthor: " + email +"\n---\n"+desc;
+      var fileName = year+"-"+month+"-"+day+"-"+shorturl+".markdown";
+      var bodyText = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nhidden: "+hidden+"\nauthor: " + email +"\n---\n"+desc;
 
-      document.getElementById('content-body-text').innerHTML = result;
+      document.getElementById('content-title-text').innerHTML = fileName;
+      document.getElementById('content-body-text').innerHTML = bodyText;
       showErrorMessages(url, shorturl, email);
     }
 
@@ -86,21 +79,18 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
     }
 
     function showErrorMessages(url, shorturl, email) {
-      var emptyUrlError = "<li>Url required</li>";
-      var emptyShortUrlError = "<li>Link name required</li>";
-      var emptyEmailError = "<li>Author email required</li>";
       var result = "Errors:<ul style='margin-top:0px'>";
       var div = document.getElementById('form-errors');
       var errorCount = 0;
 
       if (url.length <= 7) {
         errorCount += 1;
-        result += emptyUrlError;
+        result += "<li>Url required</li>";
       }
 
       if (shorturl.length == 0) {
         errorCount += 1;
-        result += emptyShortUrlError;
+        result += "<li>Link name required</li>";
       } else {
         var shortError = shorturlErrors(shorturl);
         if (shortError != "None") {
@@ -111,7 +101,7 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
 
       if (email.length == 0) {
         errorCount += 1;
-        result += emptyEmailError;
+        result += "<li>Author email required</li>";
       } else {
         var emailError = emailErrors(email);
         if (emailError != "None") {
