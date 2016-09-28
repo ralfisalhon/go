@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://piazza.com/tufts/fall2014/comp199
+hidden: false
+author: team@tufts.io
+---
+COMP199 Piazza jobs board
