@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://www.cs.tufts.edu/comp/160/
+hidden: false
+author: team@tufts.io
+---
+COMP160 Introduction to Algorithms

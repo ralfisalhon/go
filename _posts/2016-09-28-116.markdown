@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://tuftsdev.github.io/DefenseAgainstTheDarkArts/
+hidden: false
+author: team@tufts.io
+---
+COMP116 Introduction to Computer Security

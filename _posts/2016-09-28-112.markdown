@@ -1,8 +1,8 @@
 ---
 layout: links
 permalink: /:title
-forward_to: www.cs.tufts.edu/comp/40/
+forward_to: http://www.cs.tufts.edu/comp/112/
 hidden: false
 author: team@tufts.io
 ---
-COMP61 Discrete Mathematics class page
+COMP112 Network and Protocols
