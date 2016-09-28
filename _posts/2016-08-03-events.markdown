@@ -1,0 +1,7 @@
+---
+layout: links       # Don't touch this
+permalink: /:title  # Don't touch this
+forward_to: http://cal.tufts.io
+hidden: true
+author: team@tufts.io
+---

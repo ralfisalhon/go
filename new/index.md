@@ -38,9 +38,8 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
       var hidden = document.getElementById('is-hidden-checkbox').checked;
 
       var year = today.getFullYear();
-      var month = today.getMonth();
-      var day = today.getDay();
-
+      var month = today.getMonth()+1;
+      var day = today.getDate();
       if (month < 10) {
         month = "0" + month;
       };
