@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://tuftsdev.github.io/WebProgramming/
+hidden: false
+author: team@tufts.io
+---
+COMP20 Web Programming class page
