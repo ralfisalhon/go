@@ -1,1 +1,5 @@
-<head><meta http-equiv="refresh" content="0; URL='{{ page.forward_to }}'" /></head>
+{% if page.forward_to contains "://" %}
+  <head><meta http-equiv="refresh" content="0; URL='{{ page.forward_to }}'" /></head>
+{% else %}
+  <head><meta http-equiv="refresh" content="0; URL='http://{{ page.forward_to }}'" /></head>
+{% endif %}
