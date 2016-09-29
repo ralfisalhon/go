@@ -5,7 +5,45 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 {% include head.html %}
+{% include link-checker.html %}
 </head>
+
+<style type="text/css">
+  .row {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  input[type="text"] {
+    width: 50%;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(1, .1, 0, 0.9);
+    margin-bottom: 10px;
+  }
+</style>
+
+<script type="text/javascript">
+  function showShorturlErrors() {
+    var shorturlInput = document.getElementById('shorturl-input');
+    var createLinkButton = document.getElementById('create-link');
+
+    var errors = shorturlErrors(shorturlInput.value);
+    if (shorturlInput.value.length == 0) {
+      createLinkButton.innerHTML = "Create a GO Link";
+    } else if (errors != "None") {
+      createLinkButton.innerHTML = errors;
+    } else {
+      createLinkButton.innerHTML = "/" + shorturlInput.value + " is available! Create link";
+    }
+  }
+</script>
 
 <body id="post-index" {% if page.image.feature %}class="feature"{% endif %}>
 
@@ -28,7 +66,12 @@
 
 <div id="main" role="main">
   <div class="create-link">
-    <div markdown="0"><a href="/new" class="btn btn-info">Create a GO Link</a> <a href="/about/#what-are-go-links" class="btn btn-primary">What are GO Links?</a></div>
+    <div markdown="0">
+      <div class="row">
+        <input type="text" name="shorturl-input" id="shorturl-input" maxlength="140" onkeyup="showShorturlErrors()" placeholder="Check link availability"/>
+      </div>
+    <a href="/new" id="create-link" class="btn btn-info">Create a GO Link</a> <a href="/about/#what-are-go-links" class="btn btn-primary">What are GO Links?</a>
+    </div>
   </div>
   {{ content }}
 </div><!-- /#main -->

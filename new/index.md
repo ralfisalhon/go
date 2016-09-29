@@ -7,6 +7,10 @@ image:
 modified: 2016-09-27
 ---
 
+<head>
+  {% include link-checker.html %}
+</head>
+
 ## Creating a New GO Link (V0.1)
 
 We're working on automating this, but until then, there are a few steps to making a link.  Basically you make a pull request and add a file to our `_posts` folder.
@@ -26,142 +30,122 @@ ___
 
 Fill the form below and we'll generate the appropriate text for you to copy / past:
 
-<section onload>
-  <script type="text/javascript">
-    var today = new Date();
+<script type="text/javascript">
+  var today = new Date();
 
-    var existingPostNames = {
-      "about" : true,
-      "assets" : true,
-      "images" : true,
-      "new" : true,
-      "posts" : true,
-      {% for post in site.posts %}
-        "{{ post.title | downcase | replace: ' ', '-' }}" : true,
-      {% endfor %}
+  function changeContentText() {
+    var url = document.getElementById('website-url-input').value;
+    var shorturl = document.getElementById('shorturl-input').value;
+    var email = document.getElementById('email-input').value;
+    var desc = document.getElementById('description-input').value;
+    var hidden = document.getElementById('is-hidden-checkbox').checked;
+
+    var year = today.getFullYear();
+    var month = today.getMonth()+1;
+    var day = today.getDate();
+    if (month < 10) {
+      month = "0" + month;
+    };
+    if (day < 10) {
+      day = "0" + day
+    };
+
+    if (url.indexOf("://") == -1) {
+      url = "http://"+url
     }
 
-    function changeContentText() {
-      var url = document.getElementById('website-url-input').value;
-      var shorturl = document.getElementById('link-name-input').value;
-      var email = document.getElementById('email-input').value;
-      var desc = document.getElementById('description-input').value;
-      var hidden = document.getElementById('is-hidden-checkbox').checked;
+    var fileName = year+"-"+month+"-"+day+"-"+shorturl+".markdown";
+    var bodyText = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nhidden: "+hidden+"\nauthor: " + email +"\n---\n"+desc;
 
-      var year = today.getFullYear();
-      var month = today.getMonth()+1;
-      var day = today.getDate();
-      if (month < 10) {
-        month = "0" + month;
-      };
-      if (day < 10) {
-        day = "0" + day
-      };
+    document.getElementById('content-title-text').innerHTML = fileName;
+    document.getElementById('content-body-text').innerHTML = bodyText;
+    showErrorMessages(url, shorturl, email);
+  }
 
-      if (url.indexOf("://") == -1) {
-        url = "http://"+url
-      }
+  function emailErrors(email) {
+    if (email.length == 0) {
+      return "Tufts email required";
+    } else if (email.indexOf("@tufts.edu") == -1) {
+      return "Must include at least 1 Tufts email";
+    } else {
+      return "None";
+    }
+  }
 
-      var fileName = year+"-"+month+"-"+day+"-"+shorturl+".markdown";
-      var bodyText = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nhidden: "+hidden+"\nauthor: " + email +"\n---\n"+desc;
+  function showErrorMessages(url, shorturl, email) {
+    var result = "Errors:<ul style='margin-top:0px'>";
+    var div = document.getElementById('form-errors');
+    var errorCount = 0;
 
-      document.getElementById('content-title-text').innerHTML = fileName;
-      document.getElementById('content-body-text').innerHTML = bodyText;
-      showErrorMessages(url, shorturl, email);
+    if (url.length <= 7) {
+      errorCount += 1;
+      result += "<li>Url required</li>";
     }
 
-    function shorturlErrors(url) {
-      if (url.indexOf(" ") !== -1) {
-        return "Link name can't contain spaces";
-      } else if (/.*[A-Z].*/.test(url) == true) {
-        return "Warning: links are not case sensitive. /CSX and /csx forward to the same site";
-      } else if (/^[a-z0-9\-]+$/.test(url) == false) {
-        return "Links can only use letters, numbers, and -";
-      } else if (existingPostNames[(url.toLowerCase())]) {
-        return "Link name already exists";
-      } else {
-        return "None";
-      }
+    var shortError = shorturlErrors(shorturl);
+    if (shortError != "None") {
+      errorCount += 1;
+      result += "<li>" + shortError + "</li>";
     }
 
-    function emailErrors(email) {
-      if (email.indexOf("@tufts.edu") == -1) {
-        return "Must include at least 1 Tufts email";
-      } else {
-        return "None";
-      }
+    var emailError = emailErrors(email);
+    if (emailError != "None") {
+      errorCount += 1;
+      result += "<li>" + emailError + "</li>";
     }
 
-    function showErrorMessages(url, shorturl, email) {
-      var result = "Errors:<ul style='margin-top:0px'>";
-      var div = document.getElementById('form-errors');
-      var errorCount = 0;
+    if (errorCount == 0) {
+      result = "Good to Go! Copy the snippets below";
+      div.className = "form-has-no-errors";
+    } else {
+      div.className = "form-has-errors";
+    }
+    div.innerHTML = result+"</ul>";
+  }
+</script>
+<style type="text/css">
+  #form-errors {
+    margin: 30px 0px;
+  }
+  .form-has-errors {
+    background-color: #F4CCCC;
+  }
+  .form-has-no-errors {
+    background-color: #D9EAD3;
+  }
+</style>
 
-      if (url.length <= 7) {
-        errorCount += 1;
-        result += "<li>Url required</li>";
-      }
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-      if (shorturl.length == 0) {
-        errorCount += 1;
-        result += "<li>Link name required</li>";
-      } else {
-        var shortError = shorturlErrors(shorturl);
-        if (shortError != "None") {
-          errorCount += 1;
-          result += "<li>" + shortError + "</li>";
-        }
-      }
+<form action="#">
+  <div class="row">
+    <input type="text" name="website-url-input" id="website-url-input" maxlength="500" onkeyup="changeContentText()" placeholder="eg: http://tuftscsx.com"/>
+    <label id="url-input-label" for="website-url-input">url</label>
+  </div>
 
-      if (email.length == 0) {
-        errorCount += 1;
-        result += "<li>Author email required</li>";
-      } else {
-        var emailError = emailErrors(email);
-        if (emailError != "None") {
-          errorCount += 1;
-          result += "<li>" + emailError + "</li>";
-        }
-      }
+  <div class="row">
+    <input type="text" name="shorturl-input" id="shorturl-input" maxlength="500" onkeyup="changeContentText()" placeholder="eg: csx"/>
+    <label id="shorturl-input-label" for="shorturl-input">Short url</label>
+  </div>
 
-      if (errorCount == 0) {
-        result = "Good to Go! Copy the snippets below";
-        div.className = "form-has-no-errors";
-      } else {
-        div.className = "form-has-errors";
-      }
-      div.innerHTML = result+"</ul>";
-    }
-  </script>
-  <style type="text/css">
-    input[type="text"] {
-      display: block;
-      margin: 0px 0px 5px 0px;
-      padding: 0px 0px 0px 10px;
-      width: 80%;
-      font-family: sans-serif;
-      font-size: 18px;
-      appearance: none;
-      box-shadow: none;
-      border-radius: none;
-    }
-    input[type="text"]:focus {
-      outline: none;
-    }
-    .form-has-errors {
-      background-color: #F4CCCC;
-    }
-    .form-has-no-errors {
-      background-color: #D9EAD3;
-    }
-  </style>
-  <input id="website-url-input" maxlength="500" type="text" placeholder="Website url (eg: tuftscsx.com)*" onkeyup="changeContentText()">
-  <input id="link-name-input" maxlength="500" type="text" placeholder="Short link name (eg: csx)*" onkeyup="changeContentText()">
-  <input id="email-input" maxlength="100" type="text" placeholder="Tufts email*" onkeyup="changeContentText()">
-  <input id="description-input" maxlength="5000" type="text" placeholder="description (optional)" onkeyup="changeContentText()">
-  <input id="is-hidden-checkbox" type="checkbox" name="is-hidden" value="hidden" onchange="changeContentText()"> Hide from front page <br>
+  <div class="row">
+    <input type="text" name="email-input" id="email-input" maxlength="500" onkeyup="changeContentText()" placeholder="At least 1 Tufts email"/>
+    <label id="email-input-label" for="email-input">Email(s)</label>
+  </div>
+
+  <div class="row">
+    <input type="text" name="description-input" id="description-input" maxlength="5000" onkeyup="changeContentText()" placeholder="(optional)"/>
+    <label id="description-input-label" for="description-input">Description</label>
+  </div>
+
+  <div class="row">
+    <input type="checkbox" name="is-hidden-checkbox" id="is-hidden-checkbox" onchange="changeContentText()"/>
+    <label for="is-hidden-checkbox">Hide from front page</label>
+  </div>
   <div id="form-errors"><br></div>
-</section>
+</form>
+
+
 
 Copy Snippet A:
 

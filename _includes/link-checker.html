@@ -1,0 +1,29 @@
+<script type="text/javascript">
+  var existingPostNames = {
+    "about" : true,
+    "assets" : true,
+    "images" : true,
+    "new" : true,
+    "posts" : true,
+    {% for post in site.posts %}
+      "{{ post.title | downcase | replace: ' ', '-' }}" : true,
+    {% endfor %}
+  }
+
+  function shorturlErrors(url) {
+    if (url.length == 0) {
+      return "Link name required";
+    } else if (url.indexOf(" ") !== -1) {
+      return "Link name can't contain spaces";
+    } else if (/.*[A-Z].*/.test(url) == true) {
+      return "Warning: links are not case sensitive. /CSX and /csx forward to the same site";
+    } else if (/^[a-z0-9\-]+$/.test(url) == false) {
+      return "Links can only use letters, numbers, and -";
+    } else if (existingPostNames[(url.toLowerCase())]) {
+      return "Link name already exists";
+    } else {
+      return "None";
+    }
+  }
+</script>
+
