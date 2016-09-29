@@ -1,5 +1,5 @@
 # [go.tufts.io](http://go.tufts.io)
-An attempt to encourage practical and interdisciplinary projects at Tufts.
+Part of [tufts.io](http://tufts.io), an attempt to encourage practical and interdisciplinary projects at Tufts.
 
 ---
 
