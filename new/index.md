@@ -194,7 +194,7 @@ And you're done! You'll have to wait a sec for us to approve the pull request, b
 
 ___
 
-### Editing Links
+## Editing Links
 
 (Must have a [Github](https://github.com/join) account)
 
