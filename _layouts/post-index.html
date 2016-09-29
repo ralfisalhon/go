@@ -34,6 +34,7 @@
     var shorturlInput = document.getElementById('shorturl-input');
     var createLinkButton = document.getElementById('create-link');
 
+    createLinkButton.setAttribute('href', '/new');
     var errors = shorturlErrors(shorturlInput.value);
     if (shorturlInput.value.length == 0) {
       createLinkButton.innerHTML = "Create a GO Link";
@@ -41,6 +42,7 @@
       createLinkButton.innerHTML = errors;
     } else {
       createLinkButton.innerHTML = "/" + shorturlInput.value + " is available! Create link";
+      createLinkButton.setAttribute('href', '/new?shorturl='+shorturlInput.value);
     }
   }
 </script>

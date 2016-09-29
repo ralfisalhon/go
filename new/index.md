@@ -9,6 +9,20 @@ modified: 2016-09-27
 
 <head>
   {% include link-checker.html %}
+  {% include global-scripts.html %}
+  <script type="text/javascript">
+    window.onload = function() {
+      var params = ['url', 'shorturl', 'email', 'description'];
+
+      for (i = 0; i < params.length; i++) {
+        var p = getParameterByName(params[i]);
+        if (p) {
+          document.getElementById(params[i] + "-input").value = p;
+          changeContentText();
+        }
+      }
+    }
+  </script>
 </head>
 
 ## Creating a New GO Link (V0.1)
@@ -34,7 +48,7 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
   var today = new Date();
 
   function changeContentText() {
-    var url = document.getElementById('website-url-input').value;
+    var url = document.getElementById('url-input').value;
     var shorturl = document.getElementById('shorturl-input').value;
     var email = document.getElementById('email-input').value;
     var desc = document.getElementById('description-input').value;
@@ -119,8 +133,8 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
 
 <form action="#">
   <div class="row">
-    <input type="text" name="website-url-input" id="website-url-input" maxlength="500" onkeyup="changeContentText()" placeholder="eg: http://tuftscsx.com"/>
-    <label id="url-input-label" for="website-url-input">url</label>
+    <input type="text" name="url-input" id="url-input" maxlength="500" onkeyup="changeContentText()" placeholder="eg: http://tuftscsx.com"/>
+    <label id="url-input-label" for="url-input">url</label>
   </div>
 
   <div class="row">
