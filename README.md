@@ -4,7 +4,7 @@ Part of [tufts.io](http://tufts.io), an attempt to encourage practical and inter
 ---
 
 ### What are "go links"?
-go.tufts.io is a very simple link forwarder.  For example, you can set [go.tufts.io/awesome](http://go.tufts.io/awesome) to forward to your website.
+go.tufts.io is a very simple link forwarder.  For example, you can set [go.tufts.io/awesome](http://go.tufts.io/yourname) to forward to your website / resume.
 
 Advantages over other link-forwarders (eg: [bit.ly](http://bit.ly)):
 
@@ -12,8 +12,9 @@ Advantages over other link-forwarders (eg: [bit.ly](http://bit.ly)):
 * Your project is searchable on [go.tufts.io/posts](/posts)
 * [go.tufts.io](/) will be (hopefully) recognizably associated with Tufts projects / groups.
 * Pick a simple, relavant url instead of something like bit.ly/TuftsSomethingGroupFall2016
+* Rack up commits on github as you create links
 
-This is mimicking the internal link systems of some large companies such as Google ("go/") and Microsoft ("//").  Try [go.tufts.io/csx](http://go.tufts.io/csx) to see it in action.
+This is mimicking the internal link systems of some large companies such as Google ("go/") and Microsoft ("//").  Try [go.tufts.io/csx](http://go.tufts.io/csx) or [go.tufts.io/11](http://go.tufts.io/11) (comp11) to see it in action.
 
 ___
 
