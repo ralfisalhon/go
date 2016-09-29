@@ -1,4 +1,4 @@
-# [Tufts.io](http://tufts.io)
+# [go.tufts.io](http://go.tufts.io)
 An attempt to encourage practical and interdisciplinary projects at Tufts.
 
 ---
