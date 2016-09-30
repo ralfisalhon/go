@@ -1,0 +1,7 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://www.facebook.com/groups/TuftsCS/
+hidden: false
+author: team@tufts.io
+---
