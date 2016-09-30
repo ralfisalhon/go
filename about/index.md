@@ -21,6 +21,17 @@ Advantages over other link-forwarders (eg: [bit.ly](http://bit.ly)):
 * [go.tufts.io](/) will be (hopefully) recognizably associated with Tufts projects / groups.
 * Pick a simple, relavant url instead of something like bit.ly/TuftsSomethingGroupFall2016
 
+Examples of useful link ideas:
+
+* go.tufts.io/yourname goes to your personal website / github
+* Projects you worked on that belong to other organizations (eg: Jumbo Code)
+* Important google docs / slides / sheets such as pitch decks and shared accounting sheets
+* Wireframe and prototype links (eg: invision)
+* Projects on Github
+* PDF of your thesis
+* Article hosted on another website
+* PDF / Google doc of your resume
+
 This is mimicking the internal link systems of some large companies such as Google ("go/") and Microsoft ("//").  Try [go.tufts.io/csx](http://go.tufts.io/csx) to see it in action.
 
 <div markdown="0"><a href="/new" class="btn btn-info">Create a Link</a> <a href="/posts" class="btn btn-info">See all active links</a></div>
