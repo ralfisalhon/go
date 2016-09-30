@@ -194,14 +194,16 @@ And you're done! You'll have to wait a sec for us to approve the pull request, b
 
 ___
 
-## Editing Links
+## Questions
 
-(Must have a [Github](https://github.com/join) account)
+* ### Editing Links
 
-1. Go to the [posts folder](https://github.com/TuftsCSX/go.tufts.io/tree/master/_posts)
-2. Find your post, which is in the format `YYYY-MM-DD-<yoururl>.markdown`
-3. Hit the pencil / edit button
-4. Fork, change, pull request (same as creating a new link above)
+..(Must have a [Github](https://github.com/join) account)
+
+..1. Go to the [posts folder](https://github.com/TuftsCSX/go.tufts.io/tree/master/_posts)
+..2. Find your post, which is in the format `YYYY-MM-DD-<yoururl>.markdown`
+..3. Hit the pencil / edit button
+..4. Fork, change, pull request (same as creating a new link above)
 
 ___
 
