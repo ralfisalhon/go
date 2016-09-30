@@ -26,6 +26,7 @@ Examples of useful link ideas:
 * go.tufts.io/yourname goes to your personal website / github
 * Projects you worked on that belong to other organizations (eg: Jumbo Code)
 * Important google docs / slides / sheets such as pitch decks and shared accounting sheets
+* Facebook groups and events with randomized urls
 * Wireframe and prototype links (eg: invision)
 * Projects on Github
 * PDF of your thesis
