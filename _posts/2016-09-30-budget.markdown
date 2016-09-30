@@ -1,0 +1,7 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/spreadsheets/d/1C8w7cim1Ajj12HCbx4rPahUsfUxDvJt4d_me9PFiw0Y/edit#gid=0
+hidden: false
+author: team@tufts.io
+---
