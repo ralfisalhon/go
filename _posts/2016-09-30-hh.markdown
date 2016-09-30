@@ -1,0 +1,7 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://www.halliganhelper.com/
+hidden: false
+author: team@tufts.io
+---
