@@ -1,0 +1,7 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://drive.google.com/drive/u/0/folders/0B-MuiYytjNeoWm5YOUc5NVRvRm8
+hidden: false
+author: team@tufts.io
+---
