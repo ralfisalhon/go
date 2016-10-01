@@ -40,7 +40,7 @@ This is mimicking the internal link systems of some large companies such as Goog
 ___
 
 ### Purpose of [Tufts.io](http://tufts.io)
-Tufts.io is a website that's meant for people who want to build practical things at Tufts.  The focus is on three trends at Tufts:
+Tufts.io is a website that's meant for people who want to build practical things.  The focus is also on three trends at Tufts:
 
 1. That going to a large company (Google, Apple, Microsoft) is perceived as the epitome of success, while creating your own project or working for a smaller, more focused company is perceived as a failure.
 2. That CS, ELS, Design, and other disciplinaries rarely work together, but almost all successful projects from Tufts have been interdisciplinary.
