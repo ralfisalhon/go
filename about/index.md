@@ -11,8 +11,8 @@ An attempt to encourage practical and interdisciplinary projects at Tufts.
 
 ---
 
-### What are "go links"?
-go.tufts.io is a very simple link forwarder.  For example, you can set [go.tufts.io/awesome](http://go.tufts.io/awesome) to forward to your website.
+### What is go.tufts.io and what are "go links"?
+go.tufts.io is a very simple link forwarder, and "go links" are the shorthand for one of the links on this site.  For example, [go.tufts.io/csx](http://go.tufts.io/csx) forwards to tuftscsx.com and [go.tufts.io/11](http://go.tufts.io/11) forwards to the comp11 website.
 
 Advantages over other link-forwarders (eg: [bit.ly](http://bit.ly)):
 
