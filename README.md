@@ -3,8 +3,8 @@ Part of [tufts.io](http://tufts.io), an attempt to encourage practical and inter
 
 ---
 
-### What are "go links"?
-go.tufts.io is a very simple link forwarder.  For example, you can set [go.tufts.io/awesome](http://go.tufts.io/yourname) to forward to your website / resume.
+### What is go.tufts.io and what are "go links"?
+go.tufts.io is a very simple link forwarder, and "go links" are the shorthand for one of the links on this site.  For example, [go.tufts.io/csx](http://go.tufts.io/csx) forwards to tuftscsx.com and [go.tufts.io/11](http://go.tufts.io/11) forwards to the comp11 website.
 
 Advantages over other link-forwarders (eg: [bit.ly](http://bit.ly)):
 
@@ -12,9 +12,21 @@ Advantages over other link-forwarders (eg: [bit.ly](http://bit.ly)):
 * Your project is searchable on [go.tufts.io/posts](/posts)
 * [go.tufts.io](/) will be (hopefully) recognizably associated with Tufts projects / groups.
 * Pick a simple, relavant url instead of something like bit.ly/TuftsSomethingGroupFall2016
-* Rack up commits on github as you create links
 
-This is mimicking the internal link systems of some large companies such as Google ("go/") and Microsoft ("//").  Try [go.tufts.io/csx](http://go.tufts.io/csx) or [go.tufts.io/11](http://go.tufts.io/11) (comp11) to see it in action.
+Examples of useful link ideas:
+
+* go.tufts.io/yourname goes to your personal website / github
+* Projects you worked on that belong to other organizations (eg: Jumbo Code)
+* Important google docs such as pitch decks and budget sheets (eg: [go.tufts.io/register](http://go.tufts.io/register))
+* Facebook groups and events
+* Wireframe and prototype links (eg: invision)
+* Projects on Github
+* PDF of your thesis
+* Article hosted on another website
+* PDF / Google doc of your resume
+* Imgur link to a photoshopped Ming ([/ming](http://go.tufts.io/ming) is available!)
+
+This is mimicking the internal link systems of some large companies such as Google ("go/") and Microsoft ("//").  Try [go.tufts.io/csx](http://go.tufts.io/csx) to see it in action.
 
 ___
 
@@ -26,7 +38,7 @@ ___
 ___
 
 ### Purpose of [Tufts.io](http://tufts.io)
-The focus is on three trends at Tufts:
+Tufts.io is a website that's meant for people who want to build practical things at Tufts.  The focus is also on three trends at Tufts:
 
 1. That going to a large company (Google, Apple, Microsoft) is perceived as the epitome of success, while creating your own project or working for a smaller, more focused company is perceived as a failure.
 2. That CS, ELS, Design, and other disciplinaries rarely work together, but almost all successful projects from Tufts have been interdisciplinary.
