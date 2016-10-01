@@ -1,0 +1,7 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://register.tufts.io
+hidden: false
+author: team@tufts.io
+---
