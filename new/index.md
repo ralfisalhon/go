@@ -203,6 +203,5 @@ ___
 0. Jekyll, the service we're using to serve static webpages, works amazingly well with Github and is crazy fast
 
 ### Help
-0. Questions specifically about go links: [go@tufts.io](mailto:go@tufts.io)
-0. Questions regarding tufts.io generally: [team@tufts.io](mailto:team@tufts.io)
-0. Pressing questions: [richard@tufts.io](mailto:richard@tufts.io) / 617 435 6357
+0. [richard@tufts.io](mailto:richard@tufts.io) 617 435 6357
+0. General tufts.io team: [team@tufts.io](mailto:team@tufts.io)
