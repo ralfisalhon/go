@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://projects.tufts.io
+author: team@tufts.io
+hidden: false
+project: false
+---
+placeholder to create later
