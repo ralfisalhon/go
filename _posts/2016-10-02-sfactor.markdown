@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://tuftssfactor.wixsite.com/
+forward_to: http://tuftssfactor.wixsite.com/soul
 author: richard.kim@tufts.edu
 hidden: false
 project: false
