@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://www.mimirinsights.com
+author: jonathan.arbaugh@tufts.edu
+hidden: false
+project: true
+---
+Mimir organizes the world's research data
