@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Creating a New Link
+title: Creating a GO Link
 description: "Instructions on how to install and customize the modern Jekyll theme HPSTR."
 image:
   feature: abstract-11.jpg
@@ -31,7 +31,7 @@ Setup a [Github](https://github.com/join) account if you don't have one.  Make s
 
 ___
 
-To make a link, you're going to make a really small file on github that we'll generate for you.  All you have to do is copy the text and paste it in the box.
+To make a link, you're going to make a really small file on github that we'll generate for you.  All you have to do is fill in the boxes below and hit the button.
 
 **1) Fill the form below:**
 
