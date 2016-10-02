@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://tuftssfactor.wixsite.com/
+author: richard.kim@tufts.edu
+hidden: false
+project: false
+---
