@@ -111,7 +111,7 @@ To make a link, you're going to make a really small file on github that we'll ge
 
   function setCreatButtonLink(errorCount, fileName, bodyText, shorturl, email, description) {
     var button = document.getElementById('create-link-button');
-    var base = "https://github.com/TuftsCSX/go.tufts.io/new/master?path=_posts&filename=";
+    var base = "https://github.com/TuftsCSX/go.tufts.io/new/master?filename=_posts/";
     if (errorCount == 0) {
       button.className = "btn btn-info";
       button.innerHTML = "Click to create new link";
