@@ -4,7 +4,7 @@ title: Creating a New Link
 description: "Instructions on how to install and customize the modern Jekyll theme HPSTR."
 image:
   feature: abstract-11.jpg
-modified: 2016-09-27
+modified: 2016-10-01
 ---
 
 <head>
@@ -18,31 +18,22 @@ modified: 2016-09-27
         var p = getParameterByName(params[i]);
         if (p) {
           document.getElementById(params[i] + "-input").value = p;
-          changeContentText();
         }
+        changeContentText();
       }
     }
   </script>
 </head>
 
-## Creating a New GO Link (V0.1)
+### First time?
 
-We're working on automating this, but until then, there are a few steps to making a link.  Basically you make a pull request and add a file to our `_posts` folder.
-
-___
-
-### Setup
-
-1. Check [/all](/all) to see if your link isn't taken (links are **not** case sensitive)
-2. Setup a [Github](https://github.com/join) account if you don't have one.
-3. Open the [file creation page](https://github.com/TuftsCSX/go.tufts.io/new/master/_posts)
-4. If you see "You need to fork this repository", fork the repository (new github accounts will need to verify your email)
+Setup a [Github](https://github.com/join) account if you don't have one.  Make sure your [email is verified](https://help.github.com/articles/verifying-your-email-address/).
 
 ___
 
-### Content
+To make a link, you're going to make a really small file on github that we'll generate for you.  All you have to do is copy the text and paste it in the box.
 
-Fill the form below and we'll generate the appropriate text for you to copy / past:
+**1) Fill the form below:**
 
 <script type="text/javascript">
   var today = new Date();
@@ -53,6 +44,7 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
     var email = document.getElementById('email-input').value;
     var desc = document.getElementById('description-input').value;
     var hidden = document.getElementById('is-hidden-checkbox').checked;
+    var isProject = document.getElementById('is-project-checkbox').checked;
 
     var year = today.getFullYear();
     var month = today.getMonth()+1;
@@ -69,17 +61,16 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
     }
 
     var fileName = year+"-"+month+"-"+day+"-"+shorturl+".markdown";
-    var bodyText = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nhidden: "+hidden+"\nauthor: " + email +"\n---\n"+desc;
+    var bodyText = "---%0Alayout: links%0Apermalink: /:title%0Aforward_to: " + url +"%0Aauthor: " + email +"%0Ahidden: " + hidden +"%0Aproject: " + isProject +"%0A---%0A"+desc;
 
-    document.getElementById('content-title-text').innerHTML = fileName;
-    document.getElementById('content-body-text').innerHTML = bodyText;
-    showErrorMessages(url, shorturl, email);
+    var errorCount = showErrorMessages(url, shorturl, email, fileName, bodyText);
+    setCreatButtonLink(errorCount, fileName, bodyText, shorturl, email, desc);
   }
 
   function emailErrors(email) {
     if (email.length == 0) {
       return "Tufts email required";
-    } else if (email.indexOf("@tufts.edu") == -1) {
+    } else if (email.indexOf("@tufts.edu") == -1 && email.indexOf("@tufts.io") == -1) {
       return "Must include at least 1 Tufts email";
     } else {
       return "None";
@@ -109,12 +100,29 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
     }
 
     if (errorCount == 0) {
-      result = "Good to Go! Copy the snippets below";
+      result = "<b>2) Good to Go! Click the button below:</b>";
       div.className = "form-has-no-errors";
     } else {
       div.className = "form-has-errors";
     }
     div.innerHTML = result+"</ul>";
+    return errorCount;
+  }
+
+  function setCreatButtonLink(errorCount, fileName, bodyText, shorturl, email, description) {
+    var button = document.getElementById('create-link-button');
+    var base = "https://github.com/TuftsCSX/go.tufts.io/new/master?path=_posts&filename=";
+    if (errorCount == 0) {
+      button.className = "btn btn-info";
+      button.innerHTML = "Click to create new link";
+      button.href = base + fileName + "&value=" + bodyText + "&message=Creating /" + shorturl + " by " + email + "&description=" + description;
+      button.target = "_blank";
+    } else {
+      button.className = "btn btn-danger";
+      button.innerHTML = "Please fix the errors above"
+      button.href = "#short-url-generator";
+      button.target = "";
+    }
   }
 </script>
 <style type="text/css">
@@ -131,7 +139,7 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<form action="#">
+<form action="#" id="short-url-generator">
   <div class="row">
     <input type="text" name="url-input" id="url-input" maxlength="500" onkeyup="changeContentText()" placeholder="eg: http://tuftscsx.com"/>
     <label id="url-input-label" for="url-input">url</label>
@@ -154,65 +162,46 @@ Fill the form below and we'll generate the appropriate text for you to copy / pa
 
   <div class="row">
     <input type="checkbox" name="is-hidden-checkbox" id="is-hidden-checkbox" onchange="changeContentText()"/>
-    <label for="is-hidden-checkbox">Hide from front page</label>
+    <label for="is-hidden-checkbox">Hide from <a href="http://go.tufts.io">go.tufts.io</a> front page</label>
+  </div>
+  <div class="row">
+    <input type="checkbox" name="is-project-checkbox" id="is-project-checkbox" onchange="changeContentText()"/>
+    <label for="is-project-checkbox">Add to Tufts Projects? (<a href="http://go.tufts.io/projects">go.tufts.io/projects</a>)</label>
   </div>
   <div id="form-errors"><br></div>
 </form>
 
+<a id="create-link-button" href="https://github.com/TuftsCSX/go.tufts.io/new/master/_posts" class="btn" target="_blank">Click Me!</a>
 
+**3) Now hit all the green buttons to make a pull request.**
 
-Copy Snippet A:
-
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code id="content-title-text">0000-00-00-[please fill the input above].markdown</code></pre></div>
-
-Copy Snippet B:
-
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code id="content-body-text">---
-layout: links
-permalink: /:title
-forward_to: http://[fill form above]
-hidden: false
-author: [fill form above]
----
-[fill form above]
-</code></pre></div>
-
-Paste [here](https://github.com/TuftsCSX/go.tufts.io/new/master/_posts):
-
-<img src="http://i.imgur.com/hhyUbHA.png" alt="">
-
-___
-
-### Making a Pull Request
-
-1. Scroll to the bottom and hit "Propose New File"
-2. Hit the big green "Create pull request" button
-3. Add your name and tufts email in the box labeled "Leave a comment"
-4. Hit the big green "Create pull request" button
+Screenshots: [Fork Repository](http://imgur.com/qqACnUc.png)\* -> [Propose New File](http://imgur.com/jg67WRl.png) -> [Create pull request](http://imgur.com/fomzGmd.png) -> [Create pull request](http://imgur.com/62kmbe4.png)
 
 And you're done! You'll have to wait a sec for us to approve the pull request, but feel free to ping me at richard@tufts.io
+
+\* Only happens the first time
 
 ___
 
 ## Questions
 
-* ### Editing Links
+### Editing Links
+0. (Must have a [Github](https://github.com/join) account)
+0. Go to the [posts folder](https://github.com/TuftsCSX/go.tufts.io/tree/master/_posts)
+0. Find your post, which is in the format `YYYY-MM-DD-<yoururl>.markdown`
+0. Hit the pencil / edit button
+0. Fork, change, pull request (same as creating a new link above)
 
-..(Must have a [Github](https://github.com/join) account)
+### Why Github?
 
-..1. Go to the [posts folder](https://github.com/TuftsCSX/go.tufts.io/tree/master/_posts)
-..2. Find your post, which is in the format `YYYY-MM-DD-<yoururl>.markdown`
-..3. Hit the pencil / edit button
-..4. Fork, change, pull request (same as creating a new link above)
+0. We don't want to maintain a server, so we're basically using Github for authentication
+0. You can edit a link with another pull request
+0. Most people have github accounts, so they won't have to create another account on another website
+0. Encourages people to make a github account and get some commits under their belt
+0. Interface with TuftsCSX github page
+0. CSX admins don't have to learn a new interface
+0. Jekyll, the service we're using to serve static webpages, works amazingly well with Github and is crazy fast
 
-___
-
-## Why Github?
-
-* We don't want to maintain a server, so we're basically using Github for authentication
-* You can edit a link with another pull request
-* Most people have github accounts, so they won't have to create another account on another website
-* Encourages people to make a github account and get some commits under their belt
-* Interface with TuftsCSX github page
-* CSX admins don't have to learn a new interface
-* Jekyll, the service we're using to serve static webpages, works amazingly well with Github and is crazy fast
+### Help
+0. [richard@tufts.io](mailto:richard@tufts.io) 617 435 6357
+0. General tufts.io team: [team@tufts.io](mailto:team@tufts.io)
