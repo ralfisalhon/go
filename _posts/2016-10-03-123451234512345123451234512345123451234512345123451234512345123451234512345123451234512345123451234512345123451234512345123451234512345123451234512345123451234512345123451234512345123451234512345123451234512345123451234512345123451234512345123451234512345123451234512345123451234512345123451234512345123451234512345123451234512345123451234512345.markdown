@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://google.com
+author: 12345@tufts.io
+hidden: false
+project: false
+---
