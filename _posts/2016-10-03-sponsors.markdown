@@ -1,0 +1,8 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/spreadsheets/d/1KGsy5u6QYXzaqOUc46OM8VrvaISrpTEQ3lGOYSHQpYo
+author: richard@tufts.io
+hidden: true
+project: false
+---
