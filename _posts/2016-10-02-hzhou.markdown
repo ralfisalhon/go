@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://ehnree.github.io
+author: henry.zhou@tufts.edu
+hidden: true
+project: false
+---
+Henry Zhou's Page
