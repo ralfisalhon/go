@@ -156,7 +156,7 @@ To make a link, you're going to make a really small file on github that we'll ge
   </div>
 
   <div class="row">
-    <input type="text" name="description-input" id="description-input" maxlength="5000" onkeyup="changeContentText()" placeholder="(optional)"/>
+    <input type="text" name="description-input" id="description-input" maxlength="500" onkeyup="changeContentText()" placeholder="(optional)"/>
     <label id="description-input-label" for="description-input">Description</label>
   </div>
 
