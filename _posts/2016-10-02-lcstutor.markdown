@@ -5,5 +5,5 @@ forward_to: https://lcstutor.herokuapp.com/
 author: jonathan.arbaugh@tufts.edu
 hidden: false
 project: true
+description: The LCS Tutoring Portal
 ---
-The LCS Tutoring Portal

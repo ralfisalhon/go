@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: www.cs.tufts.edu/comp/40/
 hidden: false
 author: team@tufts.io
+description: COMP40 Machine Structure & Assembly-Language Programming class page
 ---
-COMP40 Machine Structure & Assembly-Language Programming class page

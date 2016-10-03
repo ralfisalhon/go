@@ -4,7 +4,5 @@ permalink: /:title
 forward_to: http://www.tuftscsx.com
 hidden: false
 author: team@tufts.io
+description: The Computer Science Exchange is group of students interested in promoting Computer Science education and fostering community within the department here at Tufts.  We hold tech-talks and meetings once a week in Halligan Hall, and we'd love to meet you. Feel free to subscribe to our e-list (go.tufts.io/csx-elist) and check out our facebook page (go.tufts.io/csx-fb).
 ---
-The Computer Science Exchange is group of students interested in promoting Computer Science education and fostering community within the department here at Tufts.
-
-We hold tech-talks and meetings once a week in Halligan Hall, and we'd love to meet you. Feel free to <a href="http://eepurl.com/-5_eX">subscribe to our e-list</a> and check out our <a href="https://www.facebook.com/TuftsCSX">facebook page</a>.
