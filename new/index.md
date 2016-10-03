@@ -146,7 +146,7 @@ To make a link, you're going to make a really small file on github that we'll ge
   </div>
 
   <div class="row">
-    <input type="text" name="shorturl-input" id="shorturl-input" maxlength="500" onkeyup="changeContentText()" placeholder="eg: csx"/>
+    <input type="text" name="shorturl-input" id="shorturl-input" maxlength="100" onkeyup="changeContentText()" placeholder="eg: csx"/>
     <label id="shorturl-input-label" for="shorturl-input">Short url</label>
   </div>
 
