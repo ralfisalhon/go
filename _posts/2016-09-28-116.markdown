@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: http://tuftsdev.github.io/DefenseAgainstTheDarkArts/
 hidden: false
 author: team@tufts.io
+description: COMP116 Introduction to Computer Security
 ---
-COMP116 Introduction to Computer Security

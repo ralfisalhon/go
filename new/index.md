@@ -61,7 +61,7 @@ To make a link, you're going to make a really small file on github that we'll ge
     }
 
     var fileName = year+"-"+month+"-"+day+"-"+shorturl+".markdown";
-    var bodyText = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nauthor: " + email +"\nhidden: " + hidden +"\nproject: " + isProject +"\n---\n"+desc;
+    var bodyText = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nauthor: " + email +"\nhidden: " + hidden +"\nproject: " + isProject +"\ndescription: " + desc + "\n---\n";
     var bodyText = encodeURIComponent(bodyText);
     var errorCount = showErrorMessages(url, shorturl, email);
     setCreatButtonLink(errorCount, fileName, bodyText, shorturl, email, desc);
@@ -156,7 +156,7 @@ To make a link, you're going to make a really small file on github that we'll ge
   </div>
 
   <div class="row">
-    <input type="text" name="description-input" id="description-input" maxlength="5000" onkeyup="changeContentText()" placeholder="(optional)"/>
+    <input type="text" name="description-input" id="description-input" maxlength="500" onkeyup="changeContentText()" placeholder="(optional)"/>
     <label id="description-input-label" for="description-input">Description</label>
   </div>
 

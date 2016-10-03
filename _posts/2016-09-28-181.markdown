@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: http://www.cs.tufts.edu/comp/181/
 hidden: false
 author: team@tufts.io
+description: COMP181 Compilers
 ---
-COMP181 Compilers

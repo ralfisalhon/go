@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: http://www.cs.tufts.edu/forms/CompSci_LA_major.pdf
 hidden: false
 author: team@tufts.io
+description: The checklist for majoring in computer science
 ---
-The checklist for majoring in computer science

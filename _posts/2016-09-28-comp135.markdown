@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: http://www.cs.tufts.edu/comp/135/
 hidden: false
 author: team@tufts.io
+description: COMP135 Introduction to Machine Learning
 ---
-COMP135 Introduction to Machine Learning

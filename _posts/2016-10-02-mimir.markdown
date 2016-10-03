@@ -5,5 +5,5 @@ forward_to: http://www.mimirinsights.com
 author: jonathan.arbaugh@tufts.edu
 hidden: false
 project: true
+description: Mimir organizes the world's research data
 ---
-Mimir organizes the world's research data

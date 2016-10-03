@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: https://piazza.com/tufts/fall2014/comp199
 hidden: false
 author: team@tufts.io
+description: COMP199 Piazza jobs board
 ---
-COMP199 Piazza jobs board

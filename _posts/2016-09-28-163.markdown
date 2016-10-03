@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: http://www.cs.tufts.edu/comp/163/
 hidden: false
 author: team@tufts.io
+description: COMP163 Computational Geometry
 ---
-COMP163 Computational Geometry

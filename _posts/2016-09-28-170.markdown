@@ -4,5 +4,5 @@ permalink: /:title
 forward_to: http://www.cs.tufts.edu/comp/170/
 hidden: false
 author: team@tufts.io
+description: COMP170 Computational Theory
 ---
-COMP170 Computational Theory
