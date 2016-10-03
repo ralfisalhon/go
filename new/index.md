@@ -61,9 +61,9 @@ To make a link, you're going to make a really small file on github that we'll ge
     }
 
     var fileName = year+"-"+month+"-"+day+"-"+shorturl+".markdown";
-    var bodyText = "---%0Alayout: links%0Apermalink: /:title%0Aforward_to: " + url +"%0Aauthor: " + email +"%0Ahidden: " + hidden +"%0Aproject: " + isProject +"%0A---%0A"+desc;
-
-    var errorCount = showErrorMessages(url, shorturl, email, fileName, bodyText);
+    var bodyText = "---\nlayout: links\npermalink: /:title\nforward_to: " + url +"\nauthor: " + email +"\nhidden: " + hidden +"\nproject: " + isProject +"\n---\n"+desc;
+    var bodyText = encodeURIComponent(bodyText);
+    var errorCount = showErrorMessages(url, shorturl, email);
     setCreatButtonLink(errorCount, fileName, bodyText, shorturl, email, desc);
   }
 
