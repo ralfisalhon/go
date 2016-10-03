@@ -13,6 +13,8 @@
   function shorturlErrors(url) {
     if (url.length == 0) {
       return "Link name required";
+    } else if (url.length > 100) {
+      return "Link name is limited to 100 characters";
     } else if (url.indexOf(" ") !== -1) {
       return "Link name can't contain spaces";
     } else if (/.*[A-Z].*/.test(url) == true) {
