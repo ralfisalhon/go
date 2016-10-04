@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://www.cs.tufts.edu/comp/86/
+forward_to: http://go.tufts.io/86 # don't change this, change /86
 hidden: false
 author: team@tufts.io
 description: COMP86 Object-Oriented Programming for Graphical User Interfaces class page
