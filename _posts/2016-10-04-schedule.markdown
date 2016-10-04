@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/document/d/1Ma0BIiw5bJs4cpbmwEINzBjuK9S9FlDHT1YaQWoBhdM
+author: team@tufts.io
+hidden: false
+project: false
+description: Hackathon schedule
+---
