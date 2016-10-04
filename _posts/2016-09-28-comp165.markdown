@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://www.cs.tufts.edu/comp/165/
+forward_to: http://go.tufts.io/165 # don't change this, change /165
 hidden: false
 author: team@tufts.io
 description: COMP163 Cryptography
