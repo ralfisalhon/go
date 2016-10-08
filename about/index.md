@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About go.Tufts.io
-image:
-  feature: abstract-5.jpg
+title: About go.tufts.io
 modified: 2016-09-27
+color1: "#42AAA4"
+color2: "#585677"
 ---
 
 # [Tufts.io](http://tufts.io)

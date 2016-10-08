@@ -6,6 +6,7 @@
 <head>
 {% include head.html %}
 {% include global-scripts.html %}
+{% include background.html %}
 </head>
 
 <body id="page" {% if page.image.feature %}class="feature"{% endif %}>
@@ -13,21 +14,16 @@
 {% include browser-upgrade.html %}
 {% include navigation.html %}
 
-{% if page.image.feature %}
-<div class="entry-header">
-  <div class="entry-image">
-    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
-  </div><!-- /.entry-image -->
-</div><!-- /.entry-header -->
-{% endif %}
-
 <div id="main" role="main">
   <article class="hentry">
-    <header class="header-title">
-      <div class="header-title-wrap">
-        <h1 class="entry-title">{{ page.title }}</h1>
-      </div><!-- /.header-title-wrap -->
-    </header>
+    <div class="entry-header header-section">
+      <ul class="bg-bubbles"> <!-- credit: codepen.io/Lewitje/pen/BNNJjo -->
+        <div class="header-text">
+          <h1>{{ page.title }}</h1>
+        </div>
+        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+      </ul>
+    </div>
     <div class="entry-content">
       {{ content }}
       <footer class="entry-meta">
