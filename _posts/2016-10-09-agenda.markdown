@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/document/d/1CCoU1YLJyc4kMxZjYDTxCz6a030PmEARMGnEgnH48yM/edit
+author: maxwell.bernstein@tufts.edu
+hidden: true
+project: false
+description: Agenda for hackathon meeting
+---
