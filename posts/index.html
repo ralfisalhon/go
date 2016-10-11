@@ -3,6 +3,8 @@ layout: post-index
 title: All Links
 description: "An archive of posts."
 comments: false
+color1: "#FAA331"
+color2: "#DF5263"
 ---
 
 {% for post in site.posts %}
@@ -15,7 +17,7 @@ comments: false
       <ul>
     {% endif %}
 
-        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title | downcase | replace: ' ', '-' }}">/{{ post.title | downcase | replace: ' ', '-' }}</a></li>
+        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="by {{ post.author }}: {{ post.description }}">/{{ post.title | downcase | replace: ' ', '-' }}</a></li>
 
     {% if forloop.last %}
       </ul>
