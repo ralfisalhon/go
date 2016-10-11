@@ -5,6 +5,8 @@
     "images" : true,
     "new" : true,
     "posts" : true,
+    "rules" : true,
+    "404" : true,
     {% for post in site.posts %}
       "{{ post.title | downcase | replace: ' ', '-' }}" : true,
     {% endfor %}

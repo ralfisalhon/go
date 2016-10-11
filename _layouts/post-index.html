@@ -38,7 +38,7 @@
     createLinkButton.setAttribute('href', '/new');
     var errors = shorturlErrors(shorturlInput.value);
     if (shorturlInput.value.length == 0) {
-      createLinkButton.innerHTML = "Create a GO Link";
+      createLinkButton.innerHTML = "Create a go/ link";
     } else if (errors != "None") {
       createLinkButton.innerHTML = errors;
     } else {
@@ -59,7 +59,9 @@
       <h1>{{ site.title }}</h1>
       <h3>{{ page.title }}</h3>
     </div>
+    {% if page.animate %}
     <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+    {% endif %}
   </ul>
 </div>
 
@@ -69,7 +71,7 @@
       <div class="row">
         <input type="text" name="shorturl-input" id="shorturl-input" maxlength="140" onkeyup="showShorturlErrors()" placeholder="Check link availability"/>
       </div>
-    <a href="/new" id="create-link" class="btn btn-info">Create a GO Link</a> <a href="/about/#what-are-go-links" class="btn btn-primary">What are GO Links?</a>
+    <a href="/new" id="create-link" class="btn btn-info">Create a go/ link</a> <a href="/about/#what-are-go-links" class="btn btn-primary">What are go/ links?</a>
     </div>
   </div>
   {{ content }}
