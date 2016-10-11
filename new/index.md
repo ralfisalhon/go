@@ -175,9 +175,12 @@ To make a link, you're going to make a really small file on github that we'll ge
 
 <a id="create-link-button" href="https://github.com/TuftsCSX/go.tufts.io/new/master/_posts" class="btn" target="_blank">Click Me!</a>
 
+**2.5) By creating a link, you agree to the rules outlined [here](http://go.tufts.io/rules)**
+
 **3) Now hit all the green buttons to make a pull request.**
 
 Screenshots: [Fork Repository](http://imgur.com/qqACnUc.png)\* -> [Propose New File](http://imgur.com/jg67WRl.png) -> [Create pull request](http://imgur.com/fomzGmd.png) -> [Create pull request](http://imgur.com/62kmbe4.png)
+
 
 And you're done! You'll have to wait a sec for us to approve the pull request, but feel free to ping me at richard@tufts.io
 

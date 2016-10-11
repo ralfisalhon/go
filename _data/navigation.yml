@@ -12,11 +12,8 @@
 - title: About
   url: /about
 
-- title: CSX Email
+- title: tufts.io email
   url: /about/#help
 
-- title: CSX Facebook
-  url: https://facebook.com/TuftsCSX
-
-- title: CSX GitHub
-  url: https://github.com/TuftsCSX
+- title: tufts.io GitHub
+  url: https://github.com/tuftsio

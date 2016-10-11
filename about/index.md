@@ -42,11 +42,12 @@ This is mimicking the internal link systems of some large companies such as Goog
 ___
 
 ### Purpose of [Tufts.io](http://tufts.io)
-Tufts.io is a website that's meant for people who want to build practical things.  The focus is also on three trends at Tufts:
+Tufts.io is a website that's meant for people who want to build practical things.  The focus is also to provide alternatives to four trends at Tufts:
 
-1. That going to a large company (Google, Apple, Microsoft) is perceived as the epitome of success, while creating your own project or working for a smaller, more focused company is perceived as a failure.
-2. That CS, ELS, Design, and other disciplinaries rarely work together, but almost all successful projects from Tufts have been interdisciplinary.
-3. That opportunities to gain practical experience at Tufts is limited
+1. Going to a large company (Google, Apple, Microsoft) is perceived as the epitome of success, while creating your own project or working for a smaller, more focused company is perceived as a failure.
+2. CS, ELS, Design, and other disciplinaries rarely work together, but almost all successful projects from Tufts have been interdisciplinary.
+3. Opportunities to gain practical experience at Tufts are limited
+4. Building anything is discouraged unless the idea is worth a billion dollars.
 
 The purpose isn't to discourage people from going to larger companies or to force people to work across disciplines, but to make it easier for people who are interested in trying.
 
@@ -56,12 +57,12 @@ ___
 
 Originally purchased to create a Tufts entrepreneurial network, tufts.io was passed down to [Tom Wang](http://www.womtang.me/) and then [Alex Lenail](http://alexlenail.me), who wanted to support individuals building things for the Tufts CS community.  During this time, the site hosted events such as [Polyhack](http://2015.polyhack.tufts.io) and [Tamper Nights](https://www.facebook.com/events/715024135262599/)
 
-The domain is currently owned by [Richard Kim](http://cwrichardkim.com), who is expanding the project to be a more permanent resource to anyone who is interested in building things at Tufts (with the guidance of [Max Bernstein](http://bernsteinbear.com/)'s web expertise).
+The domain is currently owned by [Richard Kim](http://cwrichardkim.com), who is expanding the project to be a more permanent resource to anyone who is interested in building things at Tufts.  Other members currently include [Max Bernstein](http://bernsteinbear.com/) and [Bruno Olmedo](https://www.linkedin.com/in/bruno-olmedo-aa1188a5).
 
 ___
 
 ### [Tufts.io](http://tufts.io) and CSX
-CSX is the umbrella group that encompasses all things CS at Tufts.  This includes holding tech talks, communicating with administration, supporting CS-based groups, etc.  Tufts.io is maintained by the people at CSX, but is the avenue that encourages more practical learning.  This includes the hackathon, Tamper nights, go links, resources for building individual projects, and working with the administration to enable more practical learning.
+Tufts.io is a partner group of [CSX](http://tuftscsx.com), focusing more heavily on practical projects for individuals.  It's likely that the two groups will share members, but they are officially different entities and all collaboration is done through a mutual partnership.
 
 ___
 

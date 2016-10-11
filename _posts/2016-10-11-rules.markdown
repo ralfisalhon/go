@@ -9,7 +9,7 @@ permalink: /rules
 
 # Official go/ Rules
 
-go/ is entirely open source.  This makes it easy to maintain and changes inherently have accountability.  However, it also gives anyone the power to change virtually anything about the site.
+go/ is entirely [open source](https://github.com/tuftsio/go).  This makes it easy to maintain and changes inherently have accountability.  However, it also gives anyone the power to change virtually anything about the site.
 
 We believe that this tool can be incredibly useful and we hope that individuals will do right by the community.  That being said, we reserve the right to make final decisions regarding conflicts.  To help us make those decisions, here are some basic rules:
 
@@ -39,11 +39,11 @@ If a link is taken, do not try to create a new link to replace it.  Please be re
 
 ### 6. Holding a link is only valid for 2 weeks.
 
-Anyone may "hold" a link by creating a dummy destination, but it is only valid for a maximum of two weeks before someone else can claim it.  This can be renewed by updating the date of the link.  Links owned by tufts.io are an exception to this rule.
+Anyone may "hold" a link by creating a dummy destination, but it is only valid for a maximum of two weeks before someone else can claim it.  This can be renewed by updating the date of the link.  This rule does not apply to links owned by tufts.io or tufts staff.
 
 ### 7. NSFW content, malicious content, spam, malware, or intentionally hateful content are subject to removal and user bans
 
-Be reasonable about this.  Everything is open source and thus all links are public.
+Be reasonable about this.  Everything is open source and thus all links are public.  If someone complains about a link and we believe it violates this rule, we will remove it.
 
 ### 8. We reserve the right to remove any links and ban any users.
 
