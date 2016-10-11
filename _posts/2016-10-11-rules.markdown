@@ -1,0 +1,52 @@
+---
+layout: page
+permalink: /:title
+description: "Official rules for using go/"
+header: false
+animation: false
+permalink: /rules
+---
+
+# Official go/ Rules
+
+go/ is entirely open source.  This makes it easy to maintain and changes inherently have accountability.  However, it also gives anyone the power to change virtually anything about the site.
+
+We believe that this tool can be incredibly useful and we hope that individuals will do right by the community.  That being said, we reserve the right to make final decisions regarding conflicts.  To help us make those decisions, here are some basic rules:
+
+### 1. Maliciously misleading links are strictly banned.
+
+Examples:
+
+- /free-cookies -> nsfw-website.com
+- Changing a link's destination with the intention to mislead (/facebook -> facebook.com, later edit to myspace.com once people start using it)
+
+### 2. Do not edit someone else's link without their permission.
+
+Proper procedure is to contact the listed author on the appropriate post ([see all posts](https://github.com/tuftsio/go/tree/master/_posts)).  If no valid author is listed, contact team@tufts.io
+
+### 3. team@tufts.io becomes the owner of any link without proper authorship
+
+If we cannot contact you via the author information you provided (eg: bad email, disabled email, no email provided), we reserve the right to make final decisions about the link and whether it can change ownership
+
+### 4. If an author of an expired link does not respond within 2 weeks of reasonable contact, the link becomes fair game
+
+- "Expired link": link is no longer relevant.  Examples: facebook event that has passed, project that is dead, destination link gives an error page
+- "Reasonable contact": a reasonable attempt to contact the author was made
+
+### 5. First come, first serve
+
+If a link is taken, do not try to create a new link to replace it.  Please be respectful of people who authored links before you.
+
+### 6. Holding a link is only valid for 2 weeks.
+
+Anyone may "hold" a link by creating a dummy destination, but it is only valid for a maximum of two weeks before someone else can claim it.  This can be renewed by updating the date of the link.  Links owned by tufts.io are an exception to this rule.
+
+### 7. NSFW content, malicious content, spam, malware, or intentionally hateful content are subject to removal and user bans
+
+Be reasonable about this.  Everything is open source and thus all links are public.
+
+### 8. We reserve the right to remove any links and ban any users.
+
+Hopefully we will never have to do this, but due to the open nature of this tool, we find it necessary to include this rule
+
+

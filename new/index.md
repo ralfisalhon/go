@@ -3,8 +3,10 @@ layout: page
 title: Creating a GO Link
 description: "Instructions on how to install and customize the modern Jekyll theme HPSTR."
 modified: 2016-10-01
-color1: "#FAA331"
-color2: "#DF5263"
+header: true
+animate: false
+color1: "#42AAA4"
+color2: "#585677"
 ---
 
 <head>

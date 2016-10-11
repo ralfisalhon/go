@@ -6,7 +6,9 @@
 <head>
 {% include head.html %}
 {% include global-scripts.html %}
-{% include background.html %}
+{% if page.header %}
+  {% include background.html %}
+{% endif %}
 </head>
 
 <body id="page" {% if page.image.feature %}class="feature"{% endif %}>
@@ -16,14 +18,24 @@
 
 <div id="main" role="main">
   <article class="hentry">
-    <div class="entry-header header-section">
-      <ul class="bg-bubbles"> <!-- credit: codepen.io/Lewitje/pen/BNNJjo -->
-        <div class="header-text">
-          <h1>{{ page.title }}</h1>
+    {% if page.header %}
+      <div class="entry-header header-section">
+        <ul class="bg-bubbles"> <!-- credit: codepen.io/Lewitje/pen/BNNJjo -->
+          <div class="header-text">
+            <h1>{{ page.title }}</h1>
+          </div>
+          {% if page.animate %}
+          <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+          {% endif %}
+        </ul>
+      </div>
+    {% else %}
+      <header class="header-title">
+        <div class="header-title-wrap">
+          <h1 class="entry-title">{{ page.title }}</h1>
         </div>
-        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-      </ul>
-    </div>
+      </header>
+    {% endif %}
     <div class="entry-content">
       {{ content }}
       <footer class="entry-meta">
