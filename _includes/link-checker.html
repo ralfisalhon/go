@@ -1,15 +1,12 @@
 <script type="text/javascript">
+  var reserved = [{% include reserved.txt %}];
   var existingPostNames = {
-    "about" : true,
-    "assets" : true,
-    "images" : true,
-    "new" : true,
-    "posts" : true,
-    "rules" : true,
-    "404" : true,
     {% for post in site.posts %}
       "{{ post.title | downcase | replace: ' ', '-' }}" : true,
     {% endfor %}
+  }
+  for (i = 0; i < reserved.length; i++) {
+    existingPostNames[reserved[i]] = true;
   }
 
   function shorturlErrors(url) {

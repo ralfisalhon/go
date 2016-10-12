@@ -1,0 +1,8 @@
+"about",
+"assets",
+"images",
+"new",
+"posts",
+"rules",
+"404",
+"index"
