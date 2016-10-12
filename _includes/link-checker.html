@@ -1,9 +1,7 @@
 <script type="text/javascript">
   var reserved = [{% include reserved.txt %}];
   var existingPostNames = {
-    {% for post in site.posts %}
-      "{{ post.title | downcase | replace: ' ', '-' }}" : true,
-    {% endfor %}
+    {% for post in site.posts %}"{{ post.title | downcase | replace: ' ', '-' }}" : true,{% endfor %}
   }
   for (i = 0; i < reserved.length; i++) {
     existingPostNames[reserved[i]] = true;
@@ -21,7 +19,7 @@
     } else if (/^[a-z0-9\-]+$/.test(url) == false) {
       return "Links can only use letters, numbers, and -";
     } else if (existingPostNames[(url.toLowerCase())]) {
-      return "Link name already exists";
+      return "Link exists. Open link";
     } else {
       return "None";
     }

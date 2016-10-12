@@ -17,6 +17,7 @@
   }
 
   input[type="text"] {
+    outline: none;
     width: 50%;
     height: 40px;
     padding: 10px 10px 10px 10px;
@@ -29,24 +30,6 @@
     margin-bottom: 10px;
   }
 </style>
-
-<script type="text/javascript">
-  function showShorturlErrors() {
-    var shorturlInput = document.getElementById('shorturl-input');
-    var createLinkButton = document.getElementById('create-link');
-
-    createLinkButton.setAttribute('href', '/new');
-    var errors = shorturlErrors(shorturlInput.value);
-    if (shorturlInput.value.length == 0) {
-      createLinkButton.innerHTML = "Create a go/ link";
-    } else if (errors != "None") {
-      createLinkButton.innerHTML = errors;
-    } else {
-      createLinkButton.innerHTML = "/" + shorturlInput.value + " is available! Create link";
-      createLinkButton.setAttribute('href', '/new?shorturl='+shorturlInput.value);
-    }
-  }
-</script>
 
 <body id="post-index" {% if page.image.feature %}class="feature"{% endif %}>
 
@@ -69,7 +52,10 @@
   <div class="create-link">
     <div markdown="0">
       <div class="row">
-        <input type="text" name="shorturl-input" id="shorturl-input" maxlength="140" onkeyup="showShorturlErrors()" placeholder="Check link availability"/>
+        <input type="text" list="search-results" name="shorturl-input" id="shorturl-input" maxlength="140" placeholder="Search Links"/>
+        <datalist id="search-results">
+          {% for post in site.posts %}<option value="{{ post.title | downcase | replace: ' ', '-' }}">{% endfor %}
+        </datalist>
       </div>
     <a href="/new" id="create-link" class="btn btn-info">Create a go/ link</a> <a href="/about/#what-are-go-links" class="btn btn-primary">What are go/ links?</a>
     </div>
@@ -86,4 +72,37 @@
 {% include scripts.html %}
 
 </body>
+<script type="text/javascript">
+  function showShorturlErrors() {
+    var shorturlInput = document.getElementById('shorturl-input');
+    var createLinkButton = document.getElementById('create-link');
+
+    createLinkButton.setAttribute('href', '/new');
+    var errors = shorturlErrors(shorturlInput.value);
+    if (shorturlInput.value.length == 0) {
+      createLinkButton.innerHTML = "Create a go/ link";
+    } else if (errors != "None") {
+      createLinkButton.innerHTML = errors;
+      createLinkButton.href = "/".concat(shorturlInput.value);
+    } else {
+      createLinkButton.innerHTML = "/" + shorturlInput.value + " is available! Create link";
+      createLinkButton.setAttribute('href', '/new?shorturl='+shorturlInput.value);
+    }
+  }
+  document.getElementById("shorturl-input").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+      document.getElementById("create-link").click();
+    }
+  });
+  document.getElementById('shorturl-input').addEventListener('input', function () {
+     showShorturlErrors();
+  });
+  var searchResults = document.getElementById('search-results');
+  for (i = 0; i < reserved.length; i++) {
+    var op = document.createElement('option');
+    op.value = reserved[i];
+    searchResults.appendChild(op);
+  }
+</script>
 </html>
