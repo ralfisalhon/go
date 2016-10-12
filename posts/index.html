@@ -14,32 +14,69 @@ color2: "#585677"
     {% if forloop.first %}
     <article>
       <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
-      <ul>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
     {% endif %}
-
-        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="by {{ post.author }}: {{ post.description }}">/{{ post.title | downcase | replace: ' ', '-' }}</a></li>
-
+          <tr class="project">
+            <td>
+              <a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}"><b>/{{ post.title | downcase | replace: ' ', '-' | truncate: 30, "..." }}</b></a>
+            </td>
+            <td>
+              {% if post.author %}<a href="mailto:{{ post.author }}">{{ post.author | truncate: 30, "..." }}</a>{% endif %}
+            </td>
+            <td class="post-date">
+              <a href="https://github.com/tuftsio/go/edit/master/_posts/{{ post.date | date: "%Y-%m-%d-" }}{{post.url | replace:'/',''}}.markdown"><b>suggest edit</b></a>
+            </td>
+          </tr>
+        <!-- <li class="entry-title"></li> -->
     {% if forloop.last %}
-      </ul>
+      </tbody>
+    </table>
     </article>
     {% else %}
         {% if this_year != next_year %}
-          </ul>
+            </tbody>
+          </table>
         </article>
         <article>
           <h2 id="{{ next_year }}-ref" class="year-heading">{{next_year}}</h2>
-          <ul>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
         {% endif %}
     {% endif %}
 {% endfor %}
 
 <article>
   <h2>Reserved</h2>
-  <ul>
-    <li class="entry-title"><a href="/new">/new</a></li>
-    <li class="entry-title"><a href="/posts">/posts</a></li>
-    <li class="entry-title"><a href="/images">/images</a></li>
-    <li class="entry-title"><a href="/assets">/assets</a></li>
-    <li class="entry-title"><a href="/about">/about</a></li>
+  <ul id="reserved-list">
   </ul>
+  <script type="text/javascript">
+    function createListElement(title) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.appendChild(document.createTextNode(title));
+      a.title = "Reserved shortlink";
+      a.href = "/".concat(title);
+      li.appendChild(a);
+      return li
+    }
+    var reservedList = document.getElementById("reserved-list");
+    for (i = 0; i < reserved.length; i++) {
+      reservedList.appendChild(createListElement(reserved[i]));
+    }
+  </script>
 </article>
