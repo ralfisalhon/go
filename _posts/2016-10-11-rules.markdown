@@ -5,6 +5,7 @@ description: "Official rules for using go/"
 header: false
 animation: false
 permalink: /rules
+author: tufts.io
 ---
 
 # Official go/ Rules
