@@ -3,3 +3,8 @@
 {% else %}
   <head><meta http-equiv="refresh" content="0; URL='http://{{ page.forward_to }}'" /></head>
 {% endif %}
+{% if site.google_analytics %}
+<script>
+  {% include google-analytics.js %}
+</script>
+{% endif %}
