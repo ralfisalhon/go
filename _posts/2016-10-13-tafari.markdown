@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://tafarid.github.io
+author: tafari.duncan@tufts.edu
+hidden: true
+project: false
+description: 'Tafari's Github'
+---
