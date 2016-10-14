@@ -1,9 +1,0 @@
----
-layout: links
-permalink: /:title
-forward_to: http://google.com
-author: team@tufts.io
-hidden: false
-project: false
-description: "testing"
----
