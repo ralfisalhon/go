@@ -4,6 +4,6 @@ permalink: /:title
 forward_to: http://testing.fzm7studios.com
 author: faizan.muhammad@tufts.edu
 hidden: false
-project: true
+project: false
 description: "Trumpet is a micro-job market where Tufts students and faculty can post and find small and easy jobs, such as buying a cup of coffee, booking a tutor, or bringing groceries. Essentially, Trumpet allows you to find and pay others to do a task for you or enable you to earn some extra pocket-money doing simple and easy jobs. Presented in PolyHack 16 by: Faizan Muhammad, Xinyun Zhao, Qinghan Yue, Yichuan Ma"
 ---
