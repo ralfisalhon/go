@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://linusgordon.github.io/mistah-dj
+author: linus.gordon@tufts.edu
+hidden: false
+project: true
+description: "Mistah DJ project from Polyhack 2016"
+---
