@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://iguanotron.github.io/parlance
+author: caleb.lucas_foley@tufts.edu, christopher.phifer@tufts.edu, harrison.kaiser@tufts.edu
+hidden: false
+project: false
+description: "The Parlance language is an open-source, C-based language designed for accessibility. Parlance's syntax is as close to natural language as possible, so that it can be easily recognized by speech-to-text applications. It uses an easy-to-learn set of dictionary words to build a true, powerful programming language focused on readability and speakability. Parlance is directly converted to standard ANSI C code, so users who know C can easily begin using Parlance.Parlance is a language"
+---
