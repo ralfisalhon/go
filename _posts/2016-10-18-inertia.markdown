@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://inertia-dashboard.github.io/
+author: joshua.berl@tufts.edu
+hidden: false
+project: true
+description: "inertia dashboard for your daily inspiration and depressive realism"
+---
