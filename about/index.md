@@ -67,4 +67,4 @@ Tufts.io is a partner group of [CSX](http://tuftscsx.com), focusing more heavily
 ___
 
 ### Help
-* team@tufts.io or richard@tufts.io
+* [team@tufts.io](mailto:team@tufts.io) or [richard@tufts.io](mailto:richard@tufts.io)
