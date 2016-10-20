@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://bernsteinbear.com
+author: Maxwell.Bernstein@tufts.edu
+hidden: true
+project: false
+description: "Max Bernstein's homepage"
+---
