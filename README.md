@@ -11,7 +11,7 @@ Advantages over other link-forwarders (eg: [bit.ly](http://bit.ly)):
 * Links can be maintained and edited (bit.ly links are permanent)
 * Your project is searchable on [go.tufts.io/posts](/posts)
 * [go.tufts.io](/) will be (hopefully) recognizably associated with Tufts projects / groups.
-* Pick a simple, relavant url instead of something like bit.ly/TuftsSomethingGroupFall2016
+* Pick a simple, relevant url instead of something like bit.ly/TuftsSomethingGroupFall2016
 
 Examples of useful link ideas:
 
