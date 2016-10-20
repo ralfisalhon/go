@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://put-a-ming-on-it.github.io
+author: Maxwell.Bernstein@tufts.io
+hidden: false
+project: false
+description: "Kate Wasynczuk's excellent photoshop page"
+---
