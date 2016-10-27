@@ -113,7 +113,7 @@ To make a link, you're going to make a really small file on github that we'll ge
 
   function setCreatButtonLink(errorCount, fileName, bodyText, shorturl, email, description) {
     var button = document.getElementById('create-link-button');
-    var base = "https://github.com/TuftsCSX/go.tufts.io/new/master?filename=_posts/";
+    var base = "https://github.com/tuftsio/go/new/master?filename=_posts/";
     if (errorCount == 0) {
       button.className = "btn btn-info";
       button.innerHTML = "Click to create new link";
@@ -203,8 +203,8 @@ ___
 0. You can edit a link with another pull request
 0. Most people have github accounts, so they won't have to create another account on another website
 0. Encourages people to make a github account and get some commits under their belt
-0. Interface with TuftsCSX github page
-0. CSX admins don't have to learn a new interface
+0. Interface with tufts.io github page
+0. tufts.io admins don't have to learn a new interface
 0. Jekyll, the service we're using to serve static webpages, works amazingly well with Github and is crazy fast
 
 ### Help
