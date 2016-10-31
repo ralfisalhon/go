@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/spreadsheets/d/1qRJBQRciXpAdiqy7L4-qh9B9I9Fo3BRa7ZOumyAb3mk/edit
+author: team@tufts.io (from by yuki)
+hidden: false
+project: false
+description: "list of cs alums who are willing to be contacted"
+---
