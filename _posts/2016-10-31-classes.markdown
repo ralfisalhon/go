@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://awesome-table.com/-KDz9pxYZP0Yf_3iIBR-/view
+author: richard.kim@tufts.edu
+hidden: false
+project: false
+description: "sort of like rate my professor, but for classes"
+---
