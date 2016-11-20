@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/document/d/18wkf-HDruk0RN9bnQD8i85VxBUWzkwNkAmjSCpQGNEA/edit?pli=1
+author: richard.kim@tufts.edu
+hidden: true
+project: false
+description: ""
+---
