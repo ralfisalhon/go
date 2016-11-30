@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://fab.cba.mit.edu/classes/863.16/section.Harvard/people/Garbarini/index.html
+author: logan.garbarini@tufts.edu
+hidden: true
+project: false
+description: "Logan's Class Page"
+---
