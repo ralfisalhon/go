@@ -4,6 +4,6 @@ permalink: /:title
 forward_to: https://cshopper.herokuapp.com/
 author: team@tufts.io
 hidden: false
-project: false
+project: true
 description: "[replace email] COMP20 Web Programming final project by Leah Holden, Emma Plankey, Kathryn Tweel, and Fabio Vera"
 ---

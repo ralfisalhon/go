@@ -4,6 +4,6 @@ permalink: /:title
 forward_to: https://webkingz.herokuapp.com/
 author: team@tufts.io
 hidden: false
-project: false
+project: true
 description: "[replace email] COMP20 Web Programming final project by Chris Anderson, Teddy Cahill, Jake Moran, and Ben Nissan"
 ---

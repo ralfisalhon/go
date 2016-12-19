@@ -48,17 +48,16 @@
       shouldSort: true,
       threshold: 0.3,
       location: 0,
-      distance: 50,
+      distance: 300,
       maxPatternLength: 32,
       keys: [
         "title",
-        "forward_to",
         "author",
-        "description"
+        "description",
+        "forward_to"
       ]
     };
     var fuse = new Fuse(posts, options);
     return fuse.search(searchTerm);
   }
 </script>
-
