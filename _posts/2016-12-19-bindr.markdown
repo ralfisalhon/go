@@ -2,8 +2,8 @@
 layout: links
 permalink: /:title
 forward_to: https://tuftsdev.github.io/comp20-f2016-team11/
-author: team@tufts.io
+author: jeremy.engel@tufts.edu
 hidden: false
 project: true
-description: "[replace email] COMP20 Web Programming final project by Suruchi Devanahalli, Jeremy Engel, Lexie Kirsch, and Jeremy Shih"
+description: "COMP20 Web Programming final project by Suruchi Devanahalli, Jeremy Engel, Lexie Kirsch, and Jeremy Shih"
 ---
