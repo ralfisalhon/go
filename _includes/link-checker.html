@@ -19,10 +19,9 @@
     } else if (/^[a-z0-9\-]+$/.test(url) == false) {
       return "Links can only use letters, numbers, and -";
     } else if (existingPostNames[(url.toLowerCase())]) {
-      return "Link exists. Open link";
+      return "link exists";
     } else {
       return "None";
     }
   }
 </script>
-

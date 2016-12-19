@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://go.tufts.io/170 # don't change this, change /170
+forward_to: http://tufts.io/170 # don't change this, change /170
 hidden: false
 author: team@tufts.io
 ---

@@ -1,5 +1,5 @@
-title:            go.tufts.io
-description:      A custom link forwader built for Tufts by Tufts.
+title:            tufts.io
+description:      "The Searchable Archive of Tufts Projects and Resources" 
 reading_time:     false
 words_per_minute: 200
 # When testing locally leave blank or use http://localhost:4000

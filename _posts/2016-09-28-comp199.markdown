@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://go.tufts.io/199 # don't change this, change /199
+forward_to: http://tufts.io/199 # don't change this, change /199
 hidden: false
 author: team@tufts.io
 description: COMP199 Piazza jobs board

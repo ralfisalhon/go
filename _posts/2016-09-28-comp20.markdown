@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://go.tufts.io/20 # don't change this, change /20
+forward_to: http://tufts.io/20 # don't change this, change /20
 hidden: false
 author: team@tufts.io
 description: COMP20 Web Programming class page

@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://go.tufts.io/61 # don't change this, change /61
+forward_to: http://tufts.io/61 # don't change this, change /61
 hidden: false
 author: team@tufts.io
 description: COMP61 Discrete Mathematics class page

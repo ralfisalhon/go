@@ -32,7 +32,7 @@ color2: "#585677"
               {% if post.author %}<a href="mailto:{{ post.author }}">{{ post.author | truncate: 30, "..." }}</a>{% endif %}
             </td>
             <td class="post-date">
-              <a href="http://go.tufts.io/rules" onClick='window.open("https://github.com/tuftsio/go/edit/master/_posts/{{ post.date | date: "%Y-%m-%d-" }}{{post.url | replace:'/',''}}.markdown");' target="_blank"><b>suggest edit</b></a>
+              <a href="https://github.com/tuftsio/go/edit/master/_posts/{{ post.date | date: "%Y-%m-%d-" }}{{post.url | replace:'/',''}}.markdown"><b>suggest edit</b></a>
             </td>
           </tr>
         <!-- <li class="entry-title"></li> -->
