@@ -2,8 +2,8 @@
 layout: links
 permalink: /:title
 forward_to: https://obscure-mesa-55140.herokuapp.com/
-author: team@tufts.io
+author: pulkit.jain@tufts.edu
 hidden: false
 project: true
-description: "[replace email] COMP20 Web Programming final project by Azmina Karukappadath, Pulkit Jain and Josh Podolsky"
+description: "COMP20 Web Programming final project by Azmina Karukappadath, Pulkit Jain and Josh Podolsky"
 ---
