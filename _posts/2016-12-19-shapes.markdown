@@ -5,5 +5,5 @@ forward_to: https://tuftsdev.github.io/comp20-f2016-team8/
 author: team@tufts.io
 hidden: false
 project: true
-description: "[replace email] COMP20 Web Programming final project by "
+description: "[replace email] COMP20 Web Programming final project by Siming Chen, Xiaoyu Shi, Jialu Wei, Tommy Zhu"
 ---
