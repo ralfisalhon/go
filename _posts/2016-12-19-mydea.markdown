@@ -2,8 +2,8 @@
 layout: links
 permalink: /:title
 forward_to: https://play.google.com/store/apps/details?id=com.tj.mydea
-author: team@tufts.io
+author: joseph.campbell@tufts.edu
 hidden: false
 project: true
-description: "[replace email] COMP150 Mobile Dev project by Joe Campbell and Tommy Tang. Source: https://github.com/jcamp1095/MyDea"
+description: "COMP150 Mobile Dev project by Joe Campbell and Tommy Tang. Source: https://github.com/jcamp1095/MyDea"
 ---
