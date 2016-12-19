@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://play.google.com/store/apps/details?id=com.xeno.MusTrip
+author: team@tufts.io
+hidden: false
+project: false
+description: "[replace email] COMP150 Mobile Dev project by David Bernstein and Matt Carrington-Fair. Source: https://github.com/mcarri01/comp150"
+---
