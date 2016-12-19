@@ -2,8 +2,8 @@
 layout: links
 permalink: /:title
 forward_to: https://play.google.com/store/apps/details?id=com.suh.app.suh
-author: team@tufts.io
+author: rowan.krishnan@tufts.edu
 hidden: false
 project: true
-description: "[replace email] COMP150 Mobile Dev project by Rowan Krishnan and Katya Mallison. Source: https://github.com/rkrishnan8594/Suh"
+description: "COMP150 Mobile Dev project by Rowan Krishnan and Katya Mallison. Source: https://github.com/rkrishnan8594/Suh"
 ---
