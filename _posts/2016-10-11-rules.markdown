@@ -1,16 +1,16 @@
 ---
 layout: page
 permalink: /:title
-description: "Official rules for using go/"
+description: "Official Rules"
 header: false
 animation: false
 permalink: /rules
 author: tufts.io
 ---
 
-# Official go/ Rules
+# Official Rules
 
-go/ is entirely [open source](https://github.com/tuftsio/go).  This makes it easy to maintain and changes inherently have accountability.  However, it also gives anyone the power to change virtually anything about the site.
+The tufts.io archive is entirely [open source](https://github.com/tuftsio/go).  This makes it easy to maintain and changes inherently have accountability.  However, it also gives anyone the power to change virtually anything about the site.
 
 We believe that this tool can be incredibly useful and we hope that individuals will do right by the community.  That being said, we reserve the right to make final decisions regarding conflicts.  To help us make those decisions, here are some basic rules:
 
@@ -49,5 +49,3 @@ Be reasonable about this.  Everything is open source and thus all links are publ
 ### 8. We reserve the right to remove any links and ban any users.
 
 Hopefully we will never have to do this, but due to the open nature of this tool, we find it necessary to include this rule
-
-

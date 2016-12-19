@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://go.tufts.io/181 # don't change this, change /181
+forward_to: http://tufts.io/181 # don't change this, change /181
 hidden: false
 author: team@tufts.io
 description: COMP181 Compilers

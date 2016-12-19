@@ -52,12 +52,9 @@
   <div class="create-link">
     <div markdown="0">
       <div class="row">
-        <input type="text" list="search-results" name="shorturl-input" id="shorturl-input" maxlength="140" placeholder="Search Links"/>
-        <datalist id="search-results">
-          {% for post in site.posts %}<option value="{{ post.title | downcase | replace: ' ', '-' }}">{% endfor %}
-        </datalist>
+        {% include searchbar.html %}
       </div>
-    <a href="/new" id="create-link" class="btn btn-info">Create a go/ link</a> <a href="/about/#what-are-go-links" class="btn btn-primary">What are go/ links?</a>
+    <a href="/new" id="create-link" class="btn btn-primary">Add a Link</a> <a href="/about" class="btn btn-primary">About</a> <a href="/posts" class="btn btn-primary">All links</a>
     </div>
   </div>
   {{ content }}
@@ -73,36 +70,57 @@
 
 </body>
 <script type="text/javascript">
-  function showShorturlErrors() {
-    var shorturlInput = document.getElementById('shorturl-input');
+  function updateWithNewSearchInput() {
+    var shorturlInput = document.getElementById('link-searchbar');
     var createLinkButton = document.getElementById('create-link');
+    var searchLinkButton = document.getElementById('search-link');
+    var searchbarErrors = document.getElementById('searchbar-errors');
 
     createLinkButton.setAttribute('href', '/new');
+    createLinkButton.innerHTML = "Add a Link";
+    createLinkButton.className = "btn btn-primary";
+
+    searchLinkButton.setAttribute('href', '/posts');
+    searchLinkButton.innerHTML = "Search";
+    searchLinkButton.className = "btn btn-info";
+
+    searchbarErrors.style.display = "none";
+    searchbarErrors.innerHTML = "";
+
     var errors = shorturlErrors(shorturlInput.value);
-    if (shorturlInput.value.length == 0) {
-      createLinkButton.innerHTML = "Create a go/ link";
-    } else if (errors != "None") {
-      createLinkButton.innerHTML = errors;
+
+    var isEmpty = shorturlInput.value.length == 0;
+    var isExistingLink = !isEmpty && errors === "link exists";
+    var isOtherError = !isEmpty && !isExistingLink && errors != "None";
+
+    if (isExistingLink) {
+      searchLinkButton.innerHTML = "GO";
+      searchLinkButton.href = "/".concat(shorturlInput.value);
+      searchLinkButton.className = "btn btn-success";
+
+      createLinkButton.innerHTML = "Link Exists";
       createLinkButton.href = "/".concat(shorturlInput.value);
-    } else {
-      createLinkButton.innerHTML = "/" + shorturlInput.value + " is available! Create link";
+      createLinkButton.className = "btn btn-primary";
+    } else if (isOtherError) {
+      searchLinkButton.className = "btn btn-danger";
+      searchLinkButton.href = "/".concat(shorturlInput.value);
+
+      searchbarErrors.style.display = "block";
+      searchbarErrors.innerHTML = "Error: " + errors;
+    } else { // free, legal link
+      createLinkButton.className = "btn btn-info";
       createLinkButton.setAttribute('href', '/new?shorturl='+shorturlInput.value);
+      createLinkButton.innerHTML = "Add This Link";
+
+      searchLinkButton.href = "/".concat(shorturlInput.value);
     }
   }
-  document.getElementById("shorturl-input").addEventListener("keyup", function(event) {
+  document.getElementById("link-searchbar").addEventListener("keyup", function(event) {
     event.preventDefault();
+    updateWithNewSearchInput();
     if (event.keyCode == 13) {
-      document.getElementById("create-link").click();
+      document.getElementById("search-link").click();
     }
   });
-  document.getElementById('shorturl-input').addEventListener('input', function () {
-     showShorturlErrors();
-  });
-  var searchResults = document.getElementById('search-results');
-  for (i = 0; i < reserved.length; i++) {
-    var op = document.createElement('option');
-    op.value = reserved[i];
-    searchResults.appendChild(op);
-  }
 </script>
 </html>

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Creating a GO Link
-description: "Instructions on how to install and customize the modern Jekyll theme HPSTR."
+title: Adding a Project or Resource
+description: "Adding a new link to the project and resources archive"
 modified: 2016-10-01
 header: true
 animate: false
@@ -164,18 +164,18 @@ To make a link, you're going to make a really small file on github that we'll ge
 
   <div class="row">
     <input type="checkbox" name="is-hidden-checkbox" id="is-hidden-checkbox" onchange="changeContentText()"/>
-    <label for="is-hidden-checkbox">Hide from <a href="http://go.tufts.io">go.tufts.io</a> front page</label>
+    <label for="is-hidden-checkbox">Hide from <a href="http://tufts.io">tufts.io</a> front page</label>
   </div>
   <div class="row">
     <input type="checkbox" name="is-project-checkbox" id="is-project-checkbox" onchange="changeContentText()"/>
-    <label for="is-project-checkbox">Add to Tufts Projects? (<a href="http://go.tufts.io/projects">go.tufts.io/projects</a>)</label>
+    <label for="is-project-checkbox">Add to Tufts Projects? (<a href="http://tufts.io/projects">tufts.io/projects</a>)</label>
   </div>
   <div id="form-errors"><br></div>
 </form>
 
-<a id="create-link-button" href="https://github.com/TuftsCSX/go.tufts.io/new/master/_posts" class="btn" target="_blank">Click Me!</a>
+<a id="create-link-button" href="https://github.com/tuftsio/go/new/master/_posts" class="btn" target="_blank">Click Me!</a>
 
-**2.5) By creating a link, you agree to the rules outlined [here](http://go.tufts.io/rules)**
+**2.5) By creating a link, you agree to the rules outlined here -> [\[rules\]](http://tufts.io/rules)**
 
 **3) Now hit all the green buttons to make a pull request.**
 
@@ -192,7 +192,7 @@ ___
 
 ### Editing Links
 0. (Must have a [Github](https://github.com/join) account)
-0. Go to the [posts folder](https://github.com/TuftsCSX/go.tufts.io/tree/master/_posts)
+0. Go to the [posts folder](https://github.com/tuftsio/go/tree/master/_posts)
 0. Find your post, which is in the format `YYYY-MM-DD-<yoururl>.markdown`
 0. Hit the pencil / edit button
 0. Fork, change, pull request (same as creating a new link above)
