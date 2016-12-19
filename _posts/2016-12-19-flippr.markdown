@@ -2,7 +2,7 @@
 layout: links
 permalink: /:title
 forward_to: https://play.google.com/store/apps/details?id=com.niketanpatel.mcandroid
-author: niketan.patel@tufts.edu and ivan.chen@tufts.edu
+author: niketan.patel@tufts.edu, ivan.chen@tufts.edu
 hidden: false
 project: true
 description: "COMP150 Mobile Dev project by Ivan Chen and Niketan Patel. Source: https://github.com/niketanpatel/flippr-android"
