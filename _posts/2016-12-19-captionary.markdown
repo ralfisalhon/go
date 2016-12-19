@@ -2,8 +2,8 @@
 layout: links
 permalink: /:title
 forward_to: https://captionary.herokuapp.com/#/
-author: team@tufts.io
+author: gabriella.bova@tufts.edu
 hidden: false
 project: true
-description: "[replace email] COMP20 Web Programming final project by Gabriella Bova, Sarah Hall-Swan, Yichuan	Ma, and Justin Roth"
+description: "COMP20 Web Programming final project by Gabriella Bova, Sarah Hall-Swan, Yichuan	Ma, and Justin Roth"
 ---
