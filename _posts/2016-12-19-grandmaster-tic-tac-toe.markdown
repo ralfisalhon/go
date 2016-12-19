@@ -2,8 +2,8 @@
 layout: links
 permalink: /:title
 forward_to: https://grandmastertictactoe.herokuapp.com/
-author: team@tufts.io
+author: leyla.kursat@tufts.edu
 hidden: false
 project: true
-description: "[replace email] COMP20 Web Programming final project by Zach Faber-Manning, Doug Harrison, Leyla Kursat, Adrian Sharpe"
+description: "COMP20 Web Programming final project by Zach Faber-Manning, Doug Harrison, Leyla Kursat, Adrian Sharpe"
 ---
