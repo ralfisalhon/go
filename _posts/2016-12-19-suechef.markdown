@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://play.google.com/store/apps/details?id=com.vincenttran.suechef
+author: team@tufts.io
+hidden: false
+project: false
+description: "[replace email] COMP150 Mobile Dev project by Chase Crumbaugh, Alex Ravan, and Vincent Tran. Source: https://alexravan.github.io/suechef/"
+---
