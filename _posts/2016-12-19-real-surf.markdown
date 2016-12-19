@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://real-surf.herokuapp.com/
+author: team@tufts.io
+hidden: false
+project: false
+description: "[replace email] COMP20 Web Programming final project by Ari Brown, Michael Caughron, Linus Gordon, and Dan Meyer"
+---
