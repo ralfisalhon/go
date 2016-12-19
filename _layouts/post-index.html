@@ -103,7 +103,7 @@
       createLinkButton.className = "btn btn-primary";
     } else if (isOtherError) {
       searchLinkButton.className = "btn btn-danger";
-      searchLinkButton.href = "/".concat(shorturlInput.value);
+      searchLinkButton.href = "/".concat(shorturlInput.value.replace(" ", "-"));
 
       searchbarErrors.style.display = "block";
       searchbarErrors.innerHTML = "Error: " + errors;
@@ -112,7 +112,7 @@
       createLinkButton.setAttribute('href', '/new?shorturl='+shorturlInput.value);
       createLinkButton.innerHTML = "Add This Link";
 
-      searchLinkButton.href = "/".concat(shorturlInput.value);
+      searchLinkButton.href = "/".concat(shorturlInput.value.replace(" ", "-"));
     }
   }
   document.getElementById("link-searchbar").addEventListener("keyup", function(event) {
