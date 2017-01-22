@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: https://play.google.com/store/apps/details?id=com.lunaandchris.projstudenthousing.psh
+forward_to: https://play.google.com/store/apps/details?id=com.lunachris.project.studenthousing
 author: team@tufts.io
 hidden: false
 project: true
