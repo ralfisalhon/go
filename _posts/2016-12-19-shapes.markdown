@@ -2,7 +2,7 @@
 layout: links
 permalink: /:title
 forward_to: https://tuftsdev.github.io/comp20-f2016-team8/
-author: jialu.wei@tufts.edu
+author: jialu.wei@tufts.edu, Siming.chen@tufts.edu, tianyu.zhu@tufts.edu, Xiaoyu.shi@outlook.com
 hidden: false
 project: true
 description: "COMP20 Web Programming final project by Siming Chen, Xiaoyu Shi, Jialu Wei, Tommy Zhu"
