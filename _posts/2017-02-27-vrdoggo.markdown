@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/forms/d/e/1FAIpQLSdatV9wH1ts7rJhxmQ9_rFOU_jwD4tc-jcevB3QkaBGe-p9WQ/viewform
+author: henry.zhou@tufts.edu
+hidden: false
+project: false
+description: "vr dog survey"
+---
