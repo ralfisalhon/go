@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://kanyesinparis.com
+author: adam.kercheval@tufts.edu
+hidden: false
+project: true
+description: "Kanye's In Paris, the COMP20 game of the century"
+---
