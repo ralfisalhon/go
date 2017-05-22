@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://medium.com/@cwRichardKim/we-spent-a-year-building-a-dating-app-that-only-lasts-one-week-e6e1a10cedb3
+author: richard.kim@tufts.edu
+hidden: false
+project: false
+description: ""
+---
