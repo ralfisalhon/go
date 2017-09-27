@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/forms/d/e/1FAIpQLSeP3beFgNJN75LdfQ-BnHkOgGWs6PIo0r5_8ik4K69k0sKwJg/viewform?usp=sf_link
+author: maxwell.bernstein@tufts.edu
+hidden: true
+project: false
+description: ""
+---
