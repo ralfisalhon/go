@@ -1,8 +1,8 @@
 ---
 layout: links
 permalink: /:title
-forward_to: https://docs.google.com/forms/d/e/1FAIpQLSeL-Ujr4GMFUe6km81A0SHIFTgZboguwBIf7B9G6Tpr6zXQ0A/viewform
+forward_to: https://docs.google.com/forms/d/e/1FAIpQLSdpe3tqdNiJIFX34p9OpaUpvRUsXHQnnDmTopDMIfwGb1-dgw/viewform
 hidden: false
-author: henry.zhou@tufts.edu
+author: maxwell.bernstein@tufts.edu
 description: Polyhack mentor application
 ---
