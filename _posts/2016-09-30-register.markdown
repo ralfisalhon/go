@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: http://register.tufts.io
+forward_to: https://roam1.typeform.com/to/Ke9bGC
 hidden: false
 author: team@tufts.io
 ---
