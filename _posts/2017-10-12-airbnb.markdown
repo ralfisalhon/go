@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://docs.google.com/presentation/d/1UxmxK_vmSfXDlPFCTuutta6SBirG0-xLvtX5XVns6B8/edit?usp=sharing
+author: richard.kim@tufts.edu
+hidden: false
+project: false
+description: "polyhack 2017 airbnb job / recruiter information. richard.kim@airbnb.com, nga.pham@airbnb.com"
+---
