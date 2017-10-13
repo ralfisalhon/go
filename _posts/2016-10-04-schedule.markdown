@@ -1,7 +1,7 @@
 ---
 layout: links
 permalink: /:title
-forward_to: https://docs.google.com/document/d/1Ma0BIiw5bJs4cpbmwEINzBjuK9S9FlDHT1YaQWoBhdM
+forward_to: https://docs.google.com/document/d/18PQ2bp7udVJM-t5WZKF_ElhJVot_D85UrSTAI7WEEXU/edit?ts=59e1365a
 author: team@tufts.io
 hidden: false
 project: false
