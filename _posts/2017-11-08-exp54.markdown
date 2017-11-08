@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://exp54.xuanruiqi.com/
+author: xuanrui.qi@tufts.edu
+hidden: true
+project: false
+description: "Exp 54 course"
+---
