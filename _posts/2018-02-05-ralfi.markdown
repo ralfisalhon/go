@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: https://ralfisalhon.github.io/index.html
+author: rifat.salhon@tufts.edu
+hidden: true
+project: false
+description: "Homepage of Ralfi"
+---
