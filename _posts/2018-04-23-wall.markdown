@@ -1,0 +1,9 @@
+---
+layout: links
+permalink: /:title
+forward_to: http://tuftswall.herokuapp.com/
+author: rifat.salhon@tufts.edu
+hidden: false
+project: true
+description: "Welcome to the Tufts Wall! Your source for all current Tufts events!"
+---
